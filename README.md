@@ -2,7 +2,7 @@
 
 Trainer web app for psychiatry residents: **RA 11036 (Philippine Mental Health Act of 2018)** and the **social determinants of mental health** (WHO & Calouste Gulbenkian Foundation, 2014), in clinical context.
 
-**Features:** quiz (18 Qs, by topic) · flashcards · 3 branching cases (ER, RHU, barangay) · capacity checker with chart note · 15-day IRB review tracker (Sec. 13c) · social risk screen with Z-code and referral mapping · Act reference map. Progress saves in the browser (localStorage). Works offline after first load.
+**Features:** the full Act by chapter (searchable, tap to expand) · 16 social determinants explained · quiz (18 Qs, by topic) · flashcards · 3 branching cases (ER, RHU, barangay) · capacity checker with chart note · 15-day IRB review tracker (Sec. 13c) · social risk screen with Z-code and referral mapping · Act reference map. Progress saves in the browser (localStorage). Works offline after first load. iPhone: Safari > Share > Add to Home Screen (uses `assets/apple-touch-icon.png`; iOS ignores SVG icons).
 
 ## Run
 No build step. Open `index.html`, or serve the folder (`python3 -m http.server`).
