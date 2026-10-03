@@ -1,4 +1,4 @@
-const CACHE_NAME = "mh-trainer-v6";
+const CACHE_NAME = "mh-trainer-v7";
 const ASSETS = [
   "./",
   "index.html",
@@ -8,6 +8,7 @@ const ASSETS = [
   "practice.js",
   "law.js",
   "interventions.js",
+  "glossary.js",
   "sdoh.js",
   "manifest.json",
   "assets/apple-touch-icon.png",

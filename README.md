@@ -28,3 +28,9 @@ This app was created by Isabella Navarro, MD. Latest version October 2026. isaym
 - Responsive mobile drawer navigation.
 - Light/dark theme toggle; preference is saved in localStorage.
 - Service worker cache version bumped to refresh updated interface assets.
+
+
+### Cross-references and glossary (v7)
+- Section and chapter references in learning modules link to the corresponding entry in **The Act** browser.
+- Added searchable glossary terms from RA 11036 and WHO & Calouste Gulbenkian Foundation (2014), *Social Determinants of Mental Health*.
+- Source badges distinguish Act sections from WHO report page references.

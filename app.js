@@ -3,9 +3,9 @@ const store={get(){try{return JSON.parse(localStorage.getItem("mhTrainer")||"{}"
 let S=Object.assign({quiz:{},known:[],cases:{}},store.get());const save=()=>store.set(S);
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
-const tabs={home,law,sdoh,disclose,sec13,forms,viol,audit,rights,ex,lib,comm,quiz,cards,cases,capacity,review,screen,ref};
+const tabs={home,law,sdoh,disclose,sec13,forms,viol,audit,rights,ex,lib,comm,quiz,cards,cases,capacity,review,screen,ref,glossary};
 const navGroups=[
-  ["LEARN",[["home","Home","⌂"],["law","The Act","▤"],["sdoh","Determinants","◉"],["disclose","Confidentiality","◌"],["sec13","Sec. 13","▣"],["forms","Forms","▤"],["viol","Violations","⚑"],["audit","Facility audit","▧"],["rights","Rights & complaints","♡"]]],
+  ["LEARN",[["home","Home","⌂"],["law","The Act","▤"],["glossary","Glossary","Aa"],["sdoh","Determinants","◉"],["disclose","Confidentiality","◌"],["sec13","Sec. 13","▣"],["forms","Forms","▤"],["viol","Violations","⚑"],["audit","Facility audit","▧"],["rights","Rights & complaints","♡"]]],
   ["APPLY",[["ex","Exercises","◇"],["lib","Interventions","✳"],["comm","Community","♧"]]],
   ["PRACTICE",[["quiz","Quiz","▣"],["cards","Flashcards","▤"],["cases","Cases","♧"],["capacity","Capacity","◉"]]],
   ["TOOLS",[["review","15-day IRB","▦"],["screen","Social screen","⊙"],["ref","Act reference map","☷"]]]
@@ -68,7 +68,7 @@ V.oninput=()=>{const p=[...document.querySelectorAll("[data-i]:checked")].map(x=
 
 function ref(){V.innerHTML=`<h2>RA 11036 quick map</h2><div class="card"><table><tr><th>Sec.</th><th>Topic</th><th>Key points</th></tr>${D.ref.map(r=>`<tr><td>${r[0]}</td><td><b>${r[1]}</b></td><td>${esc(r[2])}</td></tr>`).join("")}</table></div><p class="note">Source text: <a href="https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/83255" target="_blank" rel="noopener">RA 11036, Supreme Court E-Library</a>. WHO &amp; Calouste Gulbenkian Foundation (2014). <i>Social determinants of mental health.</i> Geneva: WHO. NCMH crisis line 1553 (verify numbers before distribution).</p>`}
 function law(){const L=window.LAW;V.innerHTML=`<h2>RA 11036: the Mental Health Act</h2><p class="mut">Tap a chapter, then a section. Short sections are near-verbatim; long ones are condensed. <a href="https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/83255" target="_blank" rel="noopener">Official text</a>.</p><input id="lq" placeholder="Search the Act (e.g. restraint, 15 days)" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;background:var(--card);color:var(--ink)"><div id="lw"></div>`;
-const draw=q=>{q=q.toLowerCase();$("#lw").innerHTML=L.map(c=>{const ss=c.s.filter(x=>!q||(x[0]+x[1]+x[2]).toLowerCase().includes(q));return ss.length?`<div class="card"><div class="tag">${c.c}</div><h3>${c.t}</h3>${ss.map(x=>`<details ${q?"open":""}><summary><b>Sec. ${x[0]}.</b> ${esc(x[1])}</summary><p>${esc(x[2]).replace(/\n/g,"<br>")}</p></details>`).join("")}</div>`:""}).join("")||"<p>No matches.</p>"};
+const draw=q=>{q=q.toLowerCase();$("#lw").innerHTML=L.map(c=>{const ss=c.s.filter(x=>!q||(x[0]+x[1]+x[2]).toLowerCase().includes(q));const roman=(c.c.match(/Chapter\s+([IVX]+)/i)||[])[1]||"";return ss.length?`<div class="card" id="act-chapter-${roman}" data-act-chapter="${roman}"><div class="tag">${c.c}</div><h3>${c.t}</h3>${ss.map(x=>`<details id="act-sec-${x[0]}" data-act-section="${x[0]}" ${q?"open":""}><summary><b>Sec. ${x[0]}.</b> ${esc(x[1])}</summary><p>${esc(x[2]).replace(/\n/g,"<br>")}</p></details>`).join("")}</div>`:""}).join("")||"<p>No matches.</p>"};
 $("#lq").oninput=e=>draw(e.target.value);draw("")}
 function sdoh(){const L=window.SDOH;V.innerHTML=`<h2>Social determinants of mental health</h2><p class="mut">Source: WHO &amp; Calouste Gulbenkian Foundation (2014). Philippine links to RA 11036 shown for each. Every intervention either reduces exposure or strengthens buffers.</p>${L.map(x=>`<details class="card"><summary><b>${esc(x.n)}</b></summary><p>${esc(x.w)}</p><div class="tag">Evidence</div><p>${esc(x.e)}</p><div class="tag">In clinic</div><p>${esc(x.c)}</p><div class="tag">RA 11036</div><p>${esc(x.a)}</p></details>`).join("")}`}
 
@@ -198,5 +198,29 @@ if(m==="say"){E.innerHTML=`<div class="card"><div style="white-space:pre-wrap">$
 else if(m==="where"){E.innerHTML=`<div class="card"><label>Situation: <select id="sx"><option value="">Choose</option>${R.map((x,i)=>`<option value="${i}">${x[0]}</option>`).join("")}</select></label><div id="sr" class="fb" style="display:none"></div></div><p class="note">The CHR's investigative role is limited to civil and political rights (Sec. 32). Sec. 44 penalties require conviction by final judgment.</p>`;$("#sx").onchange=e=>{const x=R[e.target.value];$("#sr").style.display=x?"block":"none";if(x)$("#sr").textContent=x[1]}}
 else E.innerHTML=`<div class="card"><ol>${H.map(x=>`<li>${x}</li>`).join("")}</ol></div><p class="note">General professional practice anchored to the Act where cited; follow your institution's policy and seek advice from counsel.</p>`}
 
+function glossary(){
+ const terms=window.GLOSSARY||[];
+ V.innerHTML=`<h2>Glossary of terms</h2><p class="mut">Plain-language study definitions drawn from RA 11036 and the WHO &amp; Calouste Gulbenkian Foundation report <i>Social Determinants of Mental Health</i> (2014). Select a source reference to open the Act section where available.</p><input id="gq" aria-label="Search glossary" placeholder="Search a term or definition…" style="width:100%;margin:8px 0 14px"><div id="glossary-list"></div><p class="note">Definitions are learning aids, not substitutes for the Act's wording or clinical guidance. WHO page references refer to the 2014 report.</p>`;
+ const draw=q=>{q=q.toLowerCase().trim();const rows=terms.filter(t=>!q||(t.term+' '+t.definition+' '+t.tags.join(' ')).toLowerCase().includes(q));$('#glossary-list').innerHTML=rows.length?rows.map(t=>`<article class="card glossary-item"><h3>${esc(t.term)}</h3><p>${esc(t.definition)}</p><div class="glossary-meta">${t.sources.map(src=>src.kind==='act'?`<a class="act-link source-link" href="#law" data-act-ref="${src.ref}" title="Open ${esc(src.label)} in The Act">${esc(src.label)} ↗</a>`:`<span class="source-chip">${esc(src.label)}</span>`).join(' · ')}</div></article>`).join(''):'<p class="mut">No glossary matches. Try another word.</p>'};
+ $('#gq').oninput=e=>draw(e.target.value);draw('');
+}
+function openActReference(ref){
+ const n=String(ref||'').match(/\d+/);if(!n)return;go('law');
+ const search=$('#lq');if(search)search.value='';
+ const query=$('#lw');if(!query)return;
+ query.querySelectorAll('details').forEach(d=>d.open=false);
+ let target=query.querySelector(`#act-sec-${CSS.escape(n[0])}`);
+ if(!target){const roman=String(ref).match(/chapter\s*([ivx]+)/i);if(roman)target=query.querySelector(`#act-chapter-${roman[1].toUpperCase()}`)}
+ if(target){if(target.tagName.toLowerCase()==='details')target.open=true;target.classList.add('act-target-highlight');target.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(()=>target.classList.remove('act-target-highlight'),1800)}
+}
+// Automatically turn legal references in learning content into links to the Act browser.
+function linkifyActReferences(rootEl){
+ if(!rootEl)return;const walker=document.createTreeWalker(rootEl,NodeFilter.SHOW_TEXT,{acceptNode(node){const p=node.parentElement;if(!p||!node.nodeValue.trim())return NodeFilter.FILTER_REJECT;if(p.closest('a,button,script,style,textarea,input,select,summary,details,code,pre,.act-link,.no-act-link,#lw'))return NodeFilter.FILTER_REJECT;if(!/\b(?:sec(?:tion)?s?\.?|chapters?)\s+(?:\d+|[ivx]+)\b/i.test(node.nodeValue))return NodeFilter.FILTER_REJECT;return NodeFilter.FILTER_ACCEPT}});
+ const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+ const re=/\b((?:Secs?\.?|Sections?)\s+(\d+)(?:\s*\([a-z]\))?(?:\s*[-–]\s*\d+)?|((?:Chapter)\s+([IVX]+|\d+)))\b/gi;
+ for(const node of nodes){const text=node.nodeValue;re.lastIndex=0;let m,last=0,frag=document.createDocumentFragment(),found=false;while((m=re.exec(text))){if(m.index>last)frag.append(document.createTextNode(text.slice(last,m.index)));const a=document.createElement('a');a.className='act-link';a.href='#law';a.textContent=m[1];a.setAttribute('data-act-ref',m[2]||('chapter '+m[4]));a.title='Open this reference in The Act';frag.append(a);last=re.lastIndex;found=true}if(found){if(last<text.length)frag.append(document.createTextNode(text.slice(last)));node.parentNode.replaceChild(frag,node)}}
+}
+V.addEventListener('click',e=>{const a=e.target.closest('a.act-link[data-act-ref]');if(!a)return;e.preventDefault();const ref=a.dataset.actRef;if(/^chapter/i.test(ref)){go('law');const card=$(`#act-chapter-${ref.replace(/^chapter\s*/i,'').toUpperCase()}`);if(card)card.scrollIntoView({behavior:'smooth',block:'center'});}else openActReference(ref)});
+const linkObserver=new MutationObserver(()=>linkifyActReferences(V));linkObserver.observe(V,{childList:true,subtree:true});
 go(Object.keys(names).includes(location.hash.slice(1))?location.hash.slice(1):"home");
 if("serviceWorker"in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{})})();
