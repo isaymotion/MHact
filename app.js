@@ -4,10 +4,22 @@ let S=Object.assign({quiz:{},known:[],cases:{}},store.get());const save=()=>stor
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
 const tabs={home,law,sdoh,disclose,sec13,forms,viol,audit,rights,ex,lib,comm,quiz,cards,cases,capacity,review,screen,ref};
-const names={home:"Home",law:"The Act",sdoh:"Determinants",disclose:"Disclose?",sec13:"Sec. 13",forms:"Forms",viol:"Violations",audit:"Audit",rights:"Rights",ex:"Exercises",lib:"Interventions",comm:"Community",quiz:"Quiz",cards:"Flashcards",cases:"Cases",capacity:"Capacity",review:"15-day IRB",screen:"Social screen",ref:"Reference"};
-$("#nav").innerHTML=Object.keys(names).map(k=>`<button data-k="${k}">${names[k]}</button>`).join("");
-$("#nav").onclick=e=>{const k=e.target.dataset.k;if(k)go(k)};
-function go(k){document.querySelectorAll("#nav button").forEach(b=>b.classList.toggle("on",b.dataset.k===k));V.oninput=null;tabs[k]();window.scrollTo(0,0);location.hash=k}
+const navGroups=[
+  ["LEARN",[["home","Home","⌂"],["law","The Act","▤"],["sdoh","Determinants","◉"],["disclose","Confidentiality","◌"],["sec13","Sec. 13","▣"],["forms","Forms","▤"],["viol","Violations","⚑"],["audit","Facility audit","▧"],["rights","Rights & complaints","♡"]]],
+  ["APPLY",[["ex","Exercises","◇"],["lib","Interventions","✳"],["comm","Community","♧"]]],
+  ["PRACTICE",[["quiz","Quiz","▣"],["cards","Flashcards","▤"],["cases","Cases","♧"],["capacity","Capacity","◉"]]],
+  ["TOOLS",[["review","15-day IRB","▦"],["screen","Social screen","⊙"],["ref","Act reference map","☷"]]]
+];
+const names=Object.fromEntries(navGroups.flatMap(g=>g[1].map(x=>[x[0],x[1]])));
+$("#nav").innerHTML=navGroups.map(([group,items])=>`<section class="nav-group"><div class="nav-group-label">${group}</div>${items.map(([k,label,icon])=>`<button data-k="${k}" aria-label="${label}"><span class="nav-icon" aria-hidden="true">${icon}</span><span>${label}</span></button>`).join("")}</section>`).join("");
+$("#nav").onclick=e=>{const b=e.target.closest("button[data-k]");if(b)go(b.dataset.k)};
+function go(k){document.querySelectorAll("#nav button").forEach(b=>{const active=b.dataset.k===k;b.classList.toggle("on",active);if(active)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});V.oninput=null;tabs[k]();window.scrollTo(0,0);location.hash=k;document.body.classList.remove("nav-open");$("#menu-toggle").setAttribute("aria-expanded","false")}
+const root=document.documentElement,themeButton=$("#theme-toggle"),themeLabel=themeButton.querySelector(".theme-label"),themeIcon=themeButton.querySelector(".theme-icon"),themeSwitch=themeButton.querySelector(".theme-switch");
+function setTheme(theme){root.dataset.theme=theme;const dark=theme==="dark";themeLabel.textContent=dark?"Dark mode":"Light mode";themeIcon.textContent=dark?"☾":"☼";themeSwitch.classList.toggle("is-dark",dark);themeButton.setAttribute("aria-label",`Switch to ${dark?"light":"dark"} mode`);document.querySelector('meta[name="theme-color"]').content=dark?"#071815":"#f7f6f0";try{localStorage.setItem("mhTrainerTheme",theme)}catch(e){}}
+let savedTheme="light";try{savedTheme=localStorage.getItem("mhTrainerTheme")||"light"}catch(e){}setTheme(savedTheme);
+themeButton.onclick=()=>setTheme(root.dataset.theme==="dark"?"light":"dark");
+$("#menu-toggle").onclick=()=>{const open=!document.body.classList.contains("nav-open");document.body.classList.toggle("nav-open",open);$("#menu-toggle").setAttribute("aria-expanded",String(open))};
+$("#sidebar-backdrop").onclick=()=>{document.body.classList.remove("nav-open");$("#menu-toggle").setAttribute("aria-expanded","false")};
 
 function home(){const q=Object.values(S.quiz),ans=q.length,ok=q.filter(x=>x).length,cs=Object.keys(S.cases).length;
 V.innerHTML=`<h2>Rights-based care meets social action</h2><p class="mut">A trainer for psychiatry residents on RA 11036 (Mental Health Act of 2018) and the social determinants of mental health (WHO &amp; Gulbenkian, 2014), set in everyday Philippine practice.</p>

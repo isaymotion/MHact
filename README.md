@@ -21,3 +21,10 @@ Check content against the current IRR and your institution's policies. Cases are
 
 ---
 This app was created by Isabella Navarro, MD. Latest version October 2026. isaymotion@gmail.com
+
+
+## Interface updates (October 2026)
+- Persistent left sidebar navigation, grouped by learning, application, practice, and tools.
+- Responsive mobile drawer navigation.
+- Light/dark theme toggle; preference is saved in localStorage.
+- Service worker cache version bumped to refresh updated interface assets.

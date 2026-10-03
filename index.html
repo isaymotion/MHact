@@ -1,6 +1,17 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mental Health Act &amp; SDoMH Trainer</title><link rel="icon" href="assets/icon-192.png" type="image/png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="MH Trainer"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#12332f"><link rel="stylesheet" href="styles.css"></head>
-<body><header><img src="assets/icon.svg" alt=""><div><b>MH Act &amp; SDoMH Trainer</b><small>RA 11036 and social determinants of mental health, for psychiatry residents</small></div></header>
-<nav id="nav"></nav><main id="view"></main>
-<footer>This app was created by Isabella Navarro, MD. Latest version October 2026.<br><a href="mailto:isaymotion@gmail.com">isaymotion@gmail.com</a><br>Educational use only; not legal or clinical advice.</footer>
+<title>Mental Health Act &amp; SDoMH Trainer</title><link rel="icon" href="assets/icon-192.png" type="image/png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="MH Trainer"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#12332f" id="theme-color"><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><img src="assets/icon.svg" alt=""><div><b>MH Act &amp; SDoMH Trainer</b><small>RA 11036 and social determinants of mental health</small></div></div>
+    <nav id="nav" aria-label="Main navigation"></nav>
+    <div class="sidebar-bottom"><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme"><span class="theme-icon">☼</span><span class="theme-label">Light mode</span><span class="theme-switch" aria-hidden="true"><i></i></span></button><div class="sidebar-note">Educational use only<br>Not legal or clinical advice</div></div>
+  </aside>
+  <div class="main-shell">
+    <header class="topbar"><button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><div class="topbar-title">Mental Health Act &amp; SDoMH Trainer</div><div class="topbar-status"><span class="status-dot"></span> Learning workspace</div></header>
+    <main id="view"></main>
+    <footer>This app was created by Isabella Navarro, MD. Latest version October 2026.<br><a href="mailto:isaymotion@gmail.com">isaymotion@gmail.com</a><br>Educational use only; not legal or clinical advice.</footer>
+  </div>
+</div>
+<div id="sidebar-backdrop" class="sidebar-backdrop"></div>
 <script src="interventions.js"></script><script src="law.js"></script><script src="sdoh.js"></script><script src="data.js"></script><script src="practice.js"></script><script src="app.js"></script></body></html>
