@@ -2,7 +2,7 @@
 
 Trainer web app for psychiatry residents: **RA 11036 (Philippine Mental Health Act of 2018)** and the **social determinants of mental health** (WHO & Calouste Gulbenkian Foundation, 2014), in clinical context.
 
-**Features:** confidentiality decision tree and practice · Sec. 13 restraint checklist · life-course and multilevel exercises plus a dedicated proportionate-universalism budget simulator (barangay and municipality scales) · interventions library (24 WHO case studies) · community assessment worksheet · advance directive, representative and supporter form drafts · spot-the-violation scenarios · facility self-audit · rights and complaints module · drug-dependency case · the full Act by chapter (searchable, tap to expand) · 16 social determinants explained · quiz (18 Qs, by topic) · flashcards · 3 branching cases (ER, RHU, barangay) · capacity checker with chart note · 15-day IRB review tracker (Sec. 13c) · social risk screen with Z-code and referral mapping · Act reference map. Progress saves in the browser (localStorage). Works offline after first load. iPhone: Safari > Share > Add to Home Screen (uses `assets/apple-touch-icon.png`; iOS ignores SVG icons).
+**Features:** confidentiality decision tree and practice · Sec. 13 restraint checklist · life-course, multilevel and proportionate-universalism exercises · interventions library (24 WHO case studies) · community assessment worksheet · advance directive, representative and supporter form drafts · spot-the-violation scenarios · facility self-audit · rights and complaints module · drug-dependency case · the full Act by chapter (searchable, tap to expand) · 16 social determinants explained · quiz (18 Qs, by topic) · flashcards · 3 branching cases (ER, RHU, barangay) · capacity checker with chart note · 15-day IRB review tracker (Sec. 13c) · social risk screen with Z-code and referral mapping · Act reference map. Progress saves in the browser (localStorage). Works offline after first load. iPhone: Safari > Share > Add to Home Screen (uses `assets/apple-touch-icon.png`; iOS ignores SVG icons).
 
 ## Run
 No build step. Open `index.html`, or serve the folder (`python3 -m http.server`).
@@ -40,8 +40,5 @@ This app was created by Isabella Navarro, MD. Latest version October 2026. isaym
 Flashcards are split into RA 11036 and SDoMH decks, shuffled by default. Mark cards as “Got it” or “Missed answer”; missed cards collect in the Missed answers deck. Each deck can be reset independently. Flashcard content is limited to RA 11036 and WHO & Calouste Gulbenkian Foundation (2014), *Social Determinants of Mental Health*.
 
 
-### Proportionate universalism exercise (v7)
-- Dedicated navigation section with the introductory framing requested for learners.
-- Two fictional budget scales: ₱100,000 for a barangay-level programme and ₱1,000,000 for a town/municipality-level LGU.
-- Compare editable targeted-only and universal-but-scaled allocations; see budget use, per-resident allocation, and estimated reach under explicit equal-cost assumptions.
-- The simulation avoids a predetermined winner and prompts reflection on assumptions, coverage, service quality, and local evidence.
+### Proportionate universalism diagrams
+The Proportionate Universalism section presents conceptual comparisons of targeted-only support and universal action scaled to need, based on the WHO & Calouste Gulbenkian Foundation (2014) report. Diagrams are explanatory illustrations, not official WHO data or a fixed allocation formula.
