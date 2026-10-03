@@ -4,7 +4,7 @@
 h1,h2,h3,.sans,button,nav{font-family:"Avenir Next","Segoe UI",system-ui,sans-serif}
 header{background:var(--g2);color:#f4efe6;padding:14px 20px;display:flex;align-items:center;gap:12px}
 header img{width:44px;height:44px}header b{font-size:18px;letter-spacing:.2px}header small{display:block;opacity:.7}
-nav{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
+nav{display:flex;gap:6px;flex-wrap:wrap;overflow-x:visible;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
 nav button{white-space:nowrap;flex:none;border:1px solid var(--line);background:none;color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;font-size:14px}
 nav button.on{background:var(--g);color:#fff;border-color:var(--g)}
 main{max-width:860px;margin:0 auto;padding:22px 16px 40px}
