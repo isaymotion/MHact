@@ -4,8 +4,8 @@
 h1,h2,h3,.sans,button,nav{font-family:"Avenir Next","Segoe UI",system-ui,sans-serif}
 header{background:var(--g2);color:#f4efe6;padding:14px 20px;display:flex;align-items:center;gap:12px}
 header img{width:44px;height:44px}header b{font-size:18px;letter-spacing:.2px}header small{display:block;opacity:.7}
-nav{display:flex;gap:6px;flex-wrap:wrap;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
-nav button{border:1px solid var(--line);background:none;color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;font-size:14px}
+nav{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
+nav button{white-space:nowrap;flex:none;border:1px solid var(--line);background:none;color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer;font-size:14px}
 nav button.on{background:var(--g);color:#fff;border-color:var(--g)}
 main{max-width:860px;margin:0 auto;padding:22px 16px 40px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0}
@@ -21,3 +21,5 @@ label.chk{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bott
 table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-bottom:1px solid var(--line);padding:7px;text-align:left;vertical-align:top}
 .note{font-size:13px;color:var(--mut)}.fb{margin-top:10px;padding:10px 12px;border-left:4px solid var(--amb);background:color-mix(in srgb,var(--amb) 12%,transparent);border-radius:6px}
 footer{text-align:center;padding:22px 16px;font-size:13px;color:var(--mut);border-top:1px solid var(--line)}footer a{color:var(--g)}
+
+@media print{header,nav,footer,.noprint{display:none!important}body.pd *{visibility:hidden}body.pd #doc,body.pd #doc *{visibility:visible}body.pd #doc{position:absolute;left:0;top:0;width:100%;color:#000}}
