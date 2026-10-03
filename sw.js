@@ -1,10 +1,11 @@
-const CACHE_NAME = "mh-trainer-v8";
+const CACHE_NAME = "mh-trainer-v6";
 const ASSETS = [
   "./",
   "index.html",
   "styles.css",
   "app.js",
   "data.js",
+  "flashcards.js",
   "practice.js",
   "law.js",
   "interventions.js",

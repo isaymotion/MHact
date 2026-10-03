@@ -23,7 +23,7 @@ $("#sidebar-backdrop").onclick=()=>{document.body.classList.remove("nav-open");$
 
 function home(){const q=Object.values(S.quiz),ans=q.length,ok=q.filter(x=>x).length,cs=Object.keys(S.cases).length;
 V.innerHTML=`<h2>Rights-based care meets social action</h2><p class="mut">A trainer for psychiatry residents on RA 11036 (Mental Health Act of 2018) and the social determinants of mental health (WHO &amp; Gulbenkian, 2014), set in everyday Philippine practice.</p>
-<div class="grid"><div class="card"><div class="stat">${ok}/${D.quiz.length}</div>quiz questions mastered</div><div class="card"><div class="stat">${S.known.length}/${D.cards.length}</div>flashcards known</div><div class="card"><div class="stat">${cs}/${D.cases.length}</div>cases completed</div></div>
+<div class="grid"><div class="card"><div class="stat">${ok}/${D.quiz.length}</div>quiz questions mastered</div><div class="card"><div class="stat">${(S.knownCards||[]).length}/${(window.FLASHCARDS?.ra?.length||0)+(window.FLASHCARDS?.sdoh?.length||0)}</div>flashcards known</div><div class="card"><div class="stat">${cs}/${D.cases.length}</div>cases completed</div></div>
 <div class="card"><h3>Where to start</h3><p>Run a <b>case</b> to see the law and the social context together, drill with the <b>quiz</b>, then use the <b>capacity</b>, <b>15-day IRB</b> and <b>social screen</b> tools as bedside templates.</p><button class="btn" onclick="document.querySelector('[data-k=cases]').click()">Start a case</button> <button class="btn alt" id="rs">Reset progress</button></div>
 <p class="note">Educational use only. Not legal advice. Check the current IRR and your institution's policies. Cases are fictional.</p>`;
 $("#rs").onclick=()=>{if(confirm("Reset all saved progress?")){S={quiz:{},known:[],cases:{}};save();home()}}}
@@ -36,12 +36,44 @@ const x=L[n];$("#qa").innerHTML=`<div class="card"><div class="tag">${x.t} &midd
 document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{const i=+b.dataset.i,good=i===x.a;document.querySelectorAll(".opt").forEach(o=>{o.disabled=true;if(+o.dataset.i===x.a)o.classList.add("ok")});if(!good)b.classList.add("no");sc+=good;S.quiz[x.i]=good;save();
 $("#fb").innerHTML=`<div class="fb">${esc(x.e)}</div><p><button class="btn" id="nx">${n+1<L.length?"Next":"Finish"}</button></p>`;$("#nx").onclick=()=>{n++;show()}})};show()}}
 
-function cards(){let L=shuffle(D.cards.map((c,i)=>({c,i}))),n=0,flip=false;
-const r=()=>{const x=L[n];V.innerHTML=`<h2>Flashcards</h2><div class="card fc" id="fc"><div>${flip?esc(x.c[1]):`<b>${esc(x.c[0])}</b><div class="note">tap to reveal</div>`}</div></div><p class="note">${n+1}/${L.length} &middot; ${S.known.length} known</p>
-<button class="btn alt" id="pv">Back</button> <button class="btn alt" id="kn">${S.known.includes(x.i)?"Unmark known":"Mark known"}</button> <button class="btn" id="nx">Next</button>`;
-$("#fc").onclick=()=>{flip=!flip;r()};$("#nx").onclick=()=>{n=(n+1)%L.length;flip=false;r()};$("#pv").onclick=()=>{n=(n-1+L.length)%L.length;flip=false;r()};
-$("#kn").onclick=()=>{S.known=S.known.includes(x.i)?S.known.filter(k=>k!==x.i):[...S.known,x.i];save();r()}};r()}
-
+function cards(){
+const decks=window.FLASHCARDS||{ra:D.cards||[],sdoh:[]};
+const all=()=>[
+  ...decks.ra.map((c,i)=>({id:`ra-${i}`,c,deck:"ra",i})),
+  ...decks.sdoh.map((c,i)=>({id:`sdoh-${i}`,c,deck:"sdoh",i}))
+];
+S.missedCards=Array.isArray(S.missedCards)?S.missedCards:[];
+S.knownCards=Array.isArray(S.knownCards)?S.knownCards:[];
+let deck="ra",L=[],n=0,flip=false;
+const names={ra:"RA 11036",sdoh:"SDoMH",missed:"Missed answers"};
+const resetDeck=()=>{if(!confirm(`Reset the ${names[deck]} deck? This clears its known/missed markings and reshuffles the cards.`))return;
+ if(deck==="missed"){S.missedCards=[];}else{const prefix=deck+"-";S.missedCards=S.missedCards.filter(id=>!id.startsWith(prefix));S.knownCards=S.knownCards.filter(id=>!id.startsWith(prefix));}
+ save();startDeck(deck);};
+const startDeck=(which)=>{deck=which;const source=which==="missed"?all().filter(x=>S.missedCards.includes(x.id)):all().filter(x=>x.deck===which);L=shuffle(source);n=0;flip=false;render();};
+const render=()=>{
+ const current=L[n];
+ V.innerHTML=`<h2>Flashcards</h2><p class="mut">Source-limited review: RA 11036 and WHO &amp; Calouste Gulbenkian Foundation (2014), <i>Social Determinants of Mental Health</i>. Cards are shuffled by default.</p>
+ <div class="card"><div class="flashcard-decks" role="group" aria-label="Choose flashcard deck">
+ <button class="btn ${deck==='ra'?'':'alt'}" data-deck="ra">RA 11036 <span class="tag">${decks.ra.length}</span></button>
+ <button class="btn ${deck==='sdoh'?'':'alt'}" data-deck="sdoh">SDoMH <span class="tag">${decks.sdoh.length}</span></button>
+ <button class="btn ${deck==='missed'?'':'alt'}" data-deck="missed">Missed answers <span class="tag">${S.missedCards.length}</span></button>
+ </div></div>
+ ${!current?`<div class="card"><h3>${deck==='missed'?'No missed answers yet':'Deck complete'}</h3><p>${deck==='missed'?'Mark a card as missed while reviewing RA 11036 or SDoMH and it will appear here.':'You have reached the end of this shuffled deck.'}</p><button class="btn" id="reshuffle">Shuffle again</button> <button class="btn alt" id="resetdeck">Reset deck</button></div>`:`<div class="card fc" id="fc" tabindex="0" role="button" aria-label="Flip flashcard"><div>${flip?`<div class="tag">Answer</div>${esc(current.c[1])}`:`<b>${esc(current.c[0])}</b><div class="note">Tap or press Enter to reveal</div>`}</div></div>
+ <p class="note">${n+1}/${L.length} cards &middot; ${(deck==='missed'?0:S.knownCards.filter(id=>id.startsWith(deck+'-')).length)} marked known &middot; ${deck==='missed'?S.missedCards.length:S.missedCards.filter(id=>id.startsWith(deck+'-')).length} missed</p>
+ <div class="flashcard-controls"><button class="btn alt" id="pv">Back</button><button class="btn alt" id="flip">${flip?'Hide answer':'Reveal answer'}</button><button class="btn" id="nx">Next</button></div>
+ <div class="flashcard-controls"><button class="btn" id="known">✓ Got it</button><button class="btn alt" id="missed">↻ Missed answer</button><button class="btn alt" id="resetdeck">Reset deck</button></div>`}`;
+ V.querySelectorAll('[data-deck]').forEach(b=>b.onclick=()=>startDeck(b.dataset.deck));
+ const fc=V.querySelector('#fc');if(fc){fc.onclick=()=>{flip=!flip;render()};fc.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flip=!flip;render()}};
+ V.querySelector('#flip').onclick=()=>{flip=!flip;render()};
+ V.querySelector('#nx').onclick=()=>{n++;flip=false;render()};V.querySelector('#pv').onclick=()=>{n=Math.max(0,n-1);flip=false;render()};
+ V.querySelector('#known').onclick=()=>{if(!S.knownCards.includes(current.id))S.knownCards.push(current.id);S.missedCards=S.missedCards.filter(id=>id!==current.id);save();n++;flip=false;render()};
+ V.querySelector('#missed').onclick=()=>{if(!S.missedCards.includes(current.id))S.missedCards.push(current.id);S.knownCards=S.knownCards.filter(id=>id!==current.id);save();n++;flip=false;render()};
+ }
+ const reset=V.querySelector('#resetdeck');if(reset)reset.onclick=resetDeck;
+ const reshuffle=V.querySelector('#reshuffle');if(reshuffle)reshuffle.onclick=()=>startDeck(deck);
+};
+startDeck("ra");
+}
 function cases(){V.innerHTML=`<h2>Case simulator</h2>${D.cases.map((c,i)=>`<div class="card"><h3>${esc(c.title)} ${S.cases[i]!=null?`<span class="tag">done ${S.cases[i]}/${c.steps.length}</span>`:""}</h3><p class="mut">${esc(c.intro)}</p><button class="btn" data-c="${i}">Open case</button></div>`).join("")}`;
 document.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>runCase(+b.dataset.c))}
 function runCase(ci){const c=D.cases[ci];let n=0,good=0;
@@ -230,6 +262,8 @@ function buildSearchIndex(){const out=[];const add=(section,title,body,kind,ref)
  (window.GLOSSARY||[]).forEach(t=>add('Glossary',t.term,`${t.definition} ${(t.tags||[]).join(' ')}`,'glossary',t.term));
  (D.quiz||[]).forEach((x,i)=>add('Quiz',x.q,`${x.t} ${x.o.join(' ')} ${x.e}`,'quiz',i));
  (D.cards||[]).forEach((x,i)=>add('Flashcards',x[0],x[1],'cards',i));
+ (window.FLASHCARDS?.ra||[]).forEach((x,i)=>add('Flashcards · RA 11036',x[0],x[1],'cards',i));
+ (window.FLASHCARDS?.sdoh||[]).forEach((x,i)=>add('Flashcards · SDoMH',x[0],x[1],'cards',i));
  (D.cases||[]).forEach((x,i)=>add('Cases',x.title,`${x.intro} ${(x.steps||[]).map(y=>[y.q,y.e,y.explanation].filter(Boolean).join(' ')).join(' ')}`,'cases',i));
  (window.INTV||[]).forEach((x,i)=>add('Interventions',x.title||x.n||x.name||`Intervention ${i+1}`,JSON.stringify(x),'lib',i));
  (D.ref||[]).forEach((x,i)=>add('Act reference map',`Sec. ${x[0]} — ${x[1]}`,x[2],'ref',x[0]));

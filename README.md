@@ -34,3 +34,7 @@ This app was created by Isabella Navarro, MD. Latest version October 2026. isaym
 - Section and chapter references in learning modules link to the corresponding entry in **The Act** browser.
 - Added searchable glossary terms from RA 11036 and WHO & Calouste Gulbenkian Foundation (2014), *Social Determinants of Mental Health*.
 - Source badges distinguish Act sections from WHO report page references.
+
+
+### Flashcards (v6)
+Flashcards are split into RA 11036 and SDoMH decks, shuffled by default. Mark cards as “Got it” or “Missed answer”; missed cards collect in the Missed answers deck. Each deck can be reset independently. Flashcard content is limited to RA 11036 and WHO & Calouste Gulbenkian Foundation (2014), *Social Determinants of Mental Health*.
