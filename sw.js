@@ -1,4 +1,4 @@
-const CACHE_NAME = "mh-trainer-v25";
+const CACHE_NAME = "mh-trainer-v26";
 const ASSETS = ["./","index.html","styles.css","app.js","data.js","flashcards.js","practice.js","osce.js","sdomh-osce.js","educators.js","law.js","interventions.js","glossary.js","sdoh.js","sdomh-cases.js","sdomh-learning.js","sdomh-matching.js","mha-pathways.js","manifest.json","assets/apple-touch-icon.png","assets/icon-192.png","assets/icon-512.png","assets/icon.svg"];
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith("mh-trainer-")&&k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));

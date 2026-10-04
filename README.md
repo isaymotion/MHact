@@ -102,3 +102,10 @@ Release 4 adds educator support for the four interactive Mental Health Act decis
 - Service-worker cache version: `mh-trainer-v22`.
 
 These materials are formative teaching aids, not validated competency instruments or legal advice. Educators should verify statutory references against the complete RA 11036, current implementing rules, other applicable law, and institutional protocols before teaching or clinical application. Course codes are pseudonymous; exported files still require appropriate institutional data governance.
+
+## Fixes in cache version `mh-trainer-v26`
+Verified in headless Chromium (Playwright) over HTTP:
+- **Act links:** every in-app section reference (learning tabs, glossary, search results, pathways, OSCE, reference map) now opens and highlights the correct section in The Act. The handler previously searched for stale element ids (`#lw`, `#act-sec-N`) and silently did nothing.
+- **Act reference map:** the section column (e.g. 14-22) is now linked.
+- **Back/forward:** one history stack. The in-app Back button now calls `history.back()`, so it no longer goes forward after the browser's Back button is used.
+Known open items: see the review notes (answer-position bias in pathways, learning decisions and matching; first-install auto-reload; sub-views are not history entries).
