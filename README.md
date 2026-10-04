@@ -40,5 +40,6 @@ This app was created by Isabella Navarro, MD. Latest version October 2026. isaym
 Flashcards are split into RA 11036 and SDoMH decks, shuffled by default. Mark cards as “Got it” or “Missed answer”; missed cards collect in the Missed answers deck. Each deck can be reset independently. Flashcard content is limited to RA 11036 and WHO & Calouste Gulbenkian Foundation (2014), *Social Determinants of Mental Health*.
 
 
-### Proportionate universalism diagrams
-The Proportionate Universalism section presents conceptual comparisons of targeted-only support and universal action scaled to need, based on the WHO & Calouste Gulbenkian Foundation (2014) report. Diagrams are explanatory illustrations, not official WHO data or a fixed allocation formula.
+## OSCE & Clinical Viva module
+
+The offline OSCE section contains 12 fictional practice stations for psychiatry residents. Station content distinguishes statutory references to RA 11036 from educational clinical reasoning and from local-policy considerations. It links to the DOH National Mental Health Strategic Plan 2019–2023 as a period-specific strategic reference. The module is for education only; faculty should verify legal content against the full Act, the current IRR, and institutional protocols before formal assessment.

@@ -1,4 +1,4 @@
-const CACHE_NAME = "mh-trainer-v6";
+const CACHE_NAME = "mh-trainer-v7";
 const ASSETS = [
   "./",
   "index.html",
@@ -7,6 +7,7 @@ const ASSETS = [
   "data.js",
   "flashcards.js",
   "practice.js",
+  "osce.js",
   "law.js",
   "interventions.js",
   "glossary.js",
@@ -58,5 +59,3 @@ self.addEventListener("fetch", event => {
     })
   );
 });
-
-// Updated 2026-10-03: proportionate universalism diagrams and search spacing fix.
