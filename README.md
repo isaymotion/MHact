@@ -63,3 +63,42 @@ Release 2 adds a planning workflow after intervention matching. Learners can doc
 Release 3 adds a case-based planner connected to all eight fictional Philippine SDoMH cases. Residents can select interacting determinants, choose candidate responses from the intervention library, draft clinical and social actions, prioritize work, assign leads and timing, respond to resource/access constraints through branching guidance, record patient preferences and protective factors, define follow-up and contingencies, and complete a five-domain self-reflection rubric. Plans save locally in the browser and can be printed. No patient-identifying information should be entered. The self-rating is formative and not a validated competency measure.
 
 The new navigation item is **Case-Based SDoMH Planner**. Service examples are illustrative; local availability, eligibility and protocols must be verified. Service worker cache version: `mh-trainer-v16`.
+
+## Mental Health Act Decision Pathways — Release 1
+
+Adds a foundation case-map library for four RA 11036 teaching scenarios:
+- Patient declines recommended admission
+- Family requests confidential information
+- Restraint is being considered
+- Discharge planning with limited family support
+
+Each case includes a scenario, learning objectives, two decision points, plausible response options, model rationale, safeguards, scope caveats, and links that open the relevant numbered section inside **The Act**. This release is the reviewed content/framework phase; Release 2 is planned to make choices interactive with branch-specific feedback and progress tracking.
+
+Legal content is an educational interpretation, not legal advice. Review against the full text of RA 11036, current implementing rules, other applicable law, and local institutional protocols before clinical teaching or use.
+
+
+## Mental Health Act Decision Pathways — Release 2
+
+Release 2 converts the four RA 11036 foundation case maps into interactive decision flows. Learners choose one response at each decision point, receive choice-specific feedback and relevant in-app Act-section links, see a branch-aware reminder before the next decision, and can review or change prior answers. Completion and formative scores are saved locally in the browser and included in the existing JSON progress backup. Learners can save and exit, continue an unfinished case, retry a case, and review the final decision-by-decision summary. The score adds one point for a preferred response, zero for incomplete, and subtracts one for an unsafe response; it is an educational aid, not a validated assessment instrument.
+
+The four cases remain refusal of recommended admission, family request for confidential information, restraint considered, and discharge with limited family support. Legal links open the relevant section in “The Act.” Confirm statutory wording, current implementing rules, other applicable law, and local facility procedures before using the material clinically.
+
+
+## Mental Health Act Decision Pathways — Release 3
+
+Release 3 adds an advanced evolving-facts decision to each of the four RA 11036 pathways: refusal of admission, family requests for confidential information, restraint considered, and discharge with limited family support. These decisions focus on reassessment, documentation, consultation/escalation, monitoring, discontinuation of restrictive intervention when no longer justified, and realistic continuity planning.
+
+The advanced decision feedback separately displays formative 0–2 ratings for clinical judgment, legal reasoning, and safeguards/procedure. These domain ratings apply to the advanced decision only and are not a validated competency instrument. Each response links to relevant sections in the app's “The Act” section. All legal explanations are educational summaries; verify the full RA 11036, current implementing rules, other applicable law, and local institutional protocols before clinical use.
+
+Service-worker cache version: `mh-trainer-v21`.
+
+## Release 4 — Mental Health Act pathway educator tools
+
+Release 4 adds educator support for the four interactive Mental Health Act decision pathways:
+
+- Printable facilitator guides for each pathway, including scenario, learning objectives, decision-by-decision choices and model rationales, section-number anchors, discussion prompts and case-specific cautions.
+- Printable learner scoring sheets with space for decision notes and a four-domain formative rubric: clinical judgment, legal reasoning, safeguards/procedure, and communication/documentation.
+- The anonymized educator CSV now includes per-pathway completion, decision count/net teaching score, and available advanced-decision domain score metadata. It excludes free-text responses and learner notes.
+- Service-worker cache version: `mh-trainer-v22`.
+
+These materials are formative teaching aids, not validated competency instruments or legal advice. Educators should verify statutory references against the complete RA 11036, current implementing rules, other applicable law, and institutional protocols before teaching or clinical application. Course codes are pseudonymous; exported files still require appropriate institutional data governance.

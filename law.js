@@ -1,61 +1,438 @@
 // RA 11036 text, organized by chapter. Philippine statutes are public-domain government works.
-// Short sections are near-verbatim; long sections are condensed (marked in the UI). Primary text source: https://lawphil.net/statutes/repacts/ra2018/ra_11036_2018.html
+// Sections 1–49 are expanded statutory transcriptions audited against the signed Act scan. This is not a legal certification. Primary source: signed Act PDF: https://upload.wikimedia.org/wikipedia/commons/e/e1/Republic_Act_No._11036_%2820180620-RA-11036-RRD%29.pdf
 window.LAW=[
 {c:"Chapter I",t:"General Provisions",s:[
-["1","Short Title",'This Act shall be known as the "Mental Health Act".'],
-["2","Declaration of Policy","The State commits itself to promoting the well-being of people by ensuring that: mental health is valued, promoted and protected; mental health conditions are treated and prevented; timely, affordable, high-quality, and culturally-appropriate mental health care is made available to the public; mental health services are free from coercion and accountable to the service users; and persons affected by mental health conditions are able to exercise the full range of human rights, and participate fully in society and at work, free from stigmatization and discrimination.\nThe State shall comply strictly with its obligations under the UDHR, the CRPD, and all other relevant human rights conventions. The applicability of RA 7277 (Magna Carta for Disabled Persons) to persons with mental health conditions is expressly recognized."],
-["3","Objectives","(a) Strengthen leadership and governance for mental health through national policies, strategies, programs and regulations.\n(b) Develop a comprehensive, integrated national mental health care system responsive to the psychiatric, neurologic and psychosocial needs of Filipinos.\n(c) Protect the rights and freedoms of persons with psychiatric, neurologic and psychosocial health needs.\n(d) Strengthen information systems, evidence and research.\n(e) Integrate mental health care in the basic health services.\n(f) Integrate strategies promoting mental health in educational institutions, the workplace, and communities."],
-["4","Definitions","(a) Addiction: a primary chronic relapsing disease of brain reward, motivation, memory and related circuitry.\n(b) Carer: a person, who may or may not be next-of-kin or relative, who maintains a close personal relationship and manifests concern for the patient's welfare.\n(c) Confidentiality: all relevant information is kept safe from access, use or disclosure to unauthorized persons or entities.\n(d) Deinstitutionalization: transitioning service users from institutional and segregated settings to community-based settings enabling social participation, recovery-based approaches and individualized care according to the user's will and preference.\n(e) Discrimination: any distinction, exclusion or restriction that nullifies recognition, enjoyment or exercise of human rights on an equal basis, including denial of reasonable accommodation. Special measures solely to protect rights of persons with decision-making impairment are not discriminatory.\n(f) Drug Rehabilitation: medical or psychotherapeutic treatment for dependency on psychoactive substances (RA 9165); may apply to behavioral addictions such as gambling, internet and sexual addictions.\n(g) Impairment or Temporary Loss of Decision-Making Capacity: a medically-determined inability to give informed consent. A service user has it when, as assessed by a mental health professional, unable to: (1) understand information on the nature of a mental health condition; (2) understand the consequences of one's decisions and actions on one's life or health, or that of others; (3) understand the nature of the proposed treatment, including methodology, direct effects and possible side effects; and (4) effectively communicate consent to treatment or hospitalization, or information regarding one's own condition.\n(h) Informed Consent: consent voluntarily given to a plan for treatment after full disclosure, in plain language by the attending provider, of the nature, consequences, benefits and risks of the proposed treatment and available alternatives.\n(i) Legal Representative: a person designated by the service user, appointed by a court, or authorized by law to act on the user's behalf; may be appointed in writing through an advance directive.\n(j) Mental Health: a state of well-being in which the individual realizes one's abilities and potentials, copes adequately with normal stresses of life, displays resilience in the face of extreme life events, works productively and fruitfully, and is able to make a positive contribution to the community.\n(k) Mental Health Condition: a neurologic or psychiatric condition with a recognizable, clinically significant disturbance in cognition, emotional regulation or behavior reflecting a genetic or acquired dysfunction in neurobiological, psychosocial or developmental processes; determined using scientifically accepted medical nomenclature and best available evidence.\n(l) Mental Health Facility: any establishment or unit whose primary function is mental health services.\n(m) Mental Health Professional: a medical doctor, psychologist, nurse, social worker or other appropriately trained and qualified person with relevant skills.\n(n) Mental Health Service Provider: public or private entity or individual providing mental health services, including professionals and workers, social workers, counselors, peer counselors, informal community caregivers, advocates, personal ombudsmen, and providers of nonmedical alternative therapies.\n(o) Mental Health Services: psychosocial, psychiatric or neurologic activities and programs across promotion, prevention, treatment and aftercare.\n(p) Mental Health Worker: a trained person, volunteer or advocate providing support services under the supervision of a mental health professional.\n(q) Psychiatric or Neurologic Emergency: a condition presenting a serious and immediate threat to the health and well-being of a service user or others, requiring immediate medical intervention.\n(r) Psychosocial Problem: dysfunction in behavior, thoughts and feelings brought about by sudden, extreme, prolonged or cumulative stressors in the physical or social environment.\n(s) Recovery-Based Approach: intervention centered on the user's strengths with active participation of persons with lived experience as equal partners in care.\n(t) Service User: a person with lived experience of any mental health condition, including those who require or are undergoing psychiatric, neurologic or psychosocial care.\n(u) Support: the spectrum of informal and formal arrangements aimed at assisting a service user in exercising legal capacity or rights (community services, personal assistants, powers of attorney, peer support, self-advocacy, caregiver networks, alternate communication methods, assistive technology).\n(v) Supported Decision Making: assisting a service user who is not affected by impairment or loss of decision-making capacity in expressing a preference, intention or decision, with safeguards against undue influence, coercion or abuse."]]},
+["1","Short Title",'This Act shall be known as the "Mental Health Act"'],
+["2","Declaration of Policy","The State affirms the basic right of all Filipinos to mental health as well as the fundamental rights of people who require mental health services.\n\nThe State commits itself to promoting the well-being of people by ensuring that: mental health is valued, promoted and protected; mental health conditions are treated and prevented; timely, affordable, high-quality, and culturally-appropriate mental health care is made available to the public; mental health services are free from coercion and accountable to the service users; and persons affected by mental health conditions are able to exercise the full range of human rights, and participate fully in society and at work, free from stigmatization and discrimination.\n\nThe State shall comply strictly with its obligations under the United Nations Declaration of Human Rights, the Convention on the Rights of Persons with Disabilities, and all other relevant international and regional human rights conventions and declarations. The applicability of Republic Act No. 7277, as amended, otherwise known as the \"Magna Carta for Disabled Persons\", to persons with mental health conditions, as defined herein, is expressly recognized."],
+["3","Objectives","The objectives of this Act are as follows:\n\n(a) Strengthen effective leadership and governance for mental health by, among others, formulating, developing, and implementing national policies, strategies, programs, and regulations relating to mental health;\n\n(b) Develop and establish a comprehensive, integrated, effective, and efficient national mental health care system responsive to the psychiatric, neurologic, and psychosocial needs of the Filipino people;\n\n(c) Protect the rights and freedoms of persons with psychiatric, neurologic, and psychosocial health needs;\n\n(d) Strengthen information systems, evidence and research for mental health;\n\n(e) Integrate mental health care in the basic health services; and\n\n(f) Integrate strategies promoting mental health in educational institutions, the workplace, and in communities."],
+["4","Definitions",`As used in this Act, the following terms are defined as follows:
+
+(a) Addiction refers to a primary chronic relapsing disease of brain reward, motivation, memory, and related circuitry. Dysfunctions in the circuitry lead to characteristic biological, psychological, social, and spiritual manifestations. It is characterized by the inability to consistently abstain impairment and behavioral control, craving, diminished recognition of significant problems with one's behavior and interpersonal relationships and a dysfunctional emotional response;
+
+(b) Carer refers to the person, who may or may not be the patient's next-of-kin or relative, who maintains a close personal relationship and manifests concern for the welfare of the patient;
+
+(c) Confidentiality refers to ensuring that all relevant information related to persons with psychiatric, neurologic, and psychosocial health needs is kept safe from access or use by, or disclosure to, persons or entities who are not authorized to access, use, or possess such information;
+
+(d) Deinstitutionalization refers to the process of transitioning service users, including persons with mental health conditions and psychosocial disabilities, from institutional and other segregated settings, to community-based settings that enable social participation, recovery-based approaches to mental health, and individualized care in accordance with the service user's will and preference;
+
+(e) Discrimination refers to any distinction, exclusion or restriction which has the purpose or effect of nullifying the recognition, enjoyment, or exercise, on an equal basis with others, of all human rights and fundamental freedoms in the political, economic, social, cultural, civil or any other field. It includes all forms of discrimination, including denial of reasonable accommodation. Special measures solely to protect the rights or secure the advancement of persons with decision-making impairment capacity shall not be deemed to be discriminatory;
+
+(f) Drug Rehabilitation refers to the processes of medical or psychotherapeutic treatment, for dependency on psychoactive substances such as alcohol, prescription drugs, and other dangerous drugs pursuant to Republic Act No. 9165, otherwise known as the "Comprehensive Dangerous Drugs Act of 2002". Rehabilitation process may also be applicable to diagnosed behavioral addictions such as gambling, internet and sexual addictions. The general intent is to enable the patient to confront his or her addiction/s and cease substance abuse to avoid the psychological, legal, financial, social, and physical consequences. Treatment includes medication for co-morbid psychiatric or other medical disorders, counseling by experts and sharing of experience with other addicted individuals;
+
+(g) Impairment or Temporary Loss of Decision-Making Capacity refers to a medically-determined inability on the part of a service user or any other person affected by a mental health condition, to provide informed consent. A service user has impairment or temporary loss of decision-making capacity when the service user as assessed by a mental health professional is unable to do the following:
+
+(1) Understand information concerning the nature of a mental health condition;
+
+(2) Understand the consequences of one's decisions and actions on one's life or health, or the life or health of others;
+
+(3) Understand information about the nature of the treatment proposed, including methodology, direct effects, and possible side effects; and
+
+(4) Effectively communicate consent to treatment or hospitalization, or information regarding one's own condition;
+
+(h) Informed Consent refers to consent voluntarily given by a service user to a plan for treatment, after a full disclosure communicated in plain language by the attending mental health service provider, of the nature, consequences, benefits, and risks of the proposed treatment, as well as available alternatives;
+
+(i) Legal Representative refers to a person designated by the service user, appointed by a court of competent jurisdiction, or authorized by this Act or any other applicable law, to act on the service user's behalf. The legal representative may also be a person appointed in writing by the service user to act on his or her behalf through an advance directive;
+
+(j) Mental Health refers to a state of well-being in which the individual realizes one's own abilities and potentials, copes adequately with the normal stresses of life, displays resilience in the face of extreme life events, works productively and fruitfully, and is able to make a positive contribution to the community;
+
+(k) Mental Health Condition refers to a neurologic or psychiatric condition characterized by the existence of a recognizable, clinically-significant disturbance in an individual's cognition, emotional regulation, or behavior that reflects a genetic or acquired dysfunction in the neurobiological, psychosocial, or developmental processes underlying mental functioning. The determination of neurologic and psychiatric conditions shall be based on scientifically-accepted medical nomenclature and best available scientific and medical evidence;
+
+(l) Mental Health Facility refers to any establishment, or any unit of an establishment, which has, as its primary function, the provision of mental health services;
+
+(m) Mental Health Professional refers to a medical doctor, psychologist, nurse, social worker or any other appropriately-trained and qualified person with specific skills relevant to the provision of mental health services;
+
+(n) Mental Health Service Provider refers to an entity or individual providing mental health services as defined in this Act, whether public or private, including, but not limited to, mental health professionals and workers, social workers and counselors, peer counselors, informal community caregivers, mental health advocates and their organizations, personal ombudsmen, and persons or entities offering nonmedical alternative therapies;
+
+(o) Mental Health Services refer to psychosocial, psychiatric or neurologic activities and programs along the whole range of the mental health support services including promotion, prevention, treatment, and aftercare, which are provided by mental health facilities and mental health professionals;
+
+(p) Mental Health Worker refers to a trained person, volunteer or advocate engaged in mental health promotion, providing support services under the supervision of a mental health professional;
+
+(q) Psychiatric or Neurologic Emergency refers to a condition presenting a serious and immediate threat to the health and well-being of a service user or any other person affected by a mental health condition, or to the health and well-being of others, requiring immediate medical intervention;
+
+(r) Psychosocial Problem refers to a condition that indicates the existence of dysfunctions in a person's behavior, thoughts and feelings brought about by sudden, extreme, prolonged or cumulative stressors in the physical or social environment;
+
+(s) Recovery-Based Approach refers to an approach to intervention and treatment centered on the strengths of a service user and involving the active participation, as equal partners in care, of persons with lived experiences in mental health. This requires integrating a service user's understanding of his or her condition into any plan for treatment and recovery;
+
+(t) Service User refers to a person with lived experience of any mental health condition including persons who require, or are undergoing psychiatric, neurologic or psychosocial care;
+
+(u) Support refers to the spectrum of informal and formal arrangements or services of varying types and intensities, provided by the State, private entities, or communities, aimed at assisting a service user in the exercise of his or her legal capacity or rights, including: community services; personal assistants and ombudsmen; powers of attorney and other legal and personal planning tools; peer support; support for self-advocacy; nonformal community caregiver networks; dialogue systems; alternate communication methods, such as nonverbal, sign, augmentative, and manual communication; and the use of assistive devices and technology; and
+
+(v) Supported Decision Making refers to the act of assisting a service user who is not affected by an impairment or loss of decision-making capacity, in expressing a mental health-related preference, intention or decision. It includes all the necessary support, safeguards and measures to ensure protection from undue influence, coercion or abuse.`]]},
 {c:"Chapter II",t:"Rights of Service Users and Other Stakeholders",s:[
-["5","Rights of Service Users","Service users enjoy, on an equal and nondiscriminatory basis, all rights under the Constitution, UDHR, CRPD and related conventions, including the right to:\n(a) Freedom from social, economic and political discrimination and stigmatization, by public or private actors;\n(b) Exercise all civil, political, economic, social, religious, educational and cultural rights without discrimination (disability, age, gender, sexual orientation, race, color, language, religion, nationality, ethnic or social origin);\n(c) Evidence-based treatment of the same standard and quality regardless of age, sex, socioeconomic status, race, ethnicity or sexual orientation;\n(d) Affordable essential health and social services for the highest attainable standard of mental health;\n(e) Mental health services at all levels of the national health care system;\n(f) Comprehensive, coordinated treatment through a multidisciplinary, user-driven treatment and recovery plan;\n(g) Access to psychosocial care and clinical treatment in the least restrictive environment and manner;\n(h) Humane treatment free from solitary confinement, torture and other cruel, inhumane, harmful or degrading treatment and invasive procedures not backed by scientific evidence;\n(i) Aftercare and rehabilitation, when possible in the community, for social reintegration and inclusion;\n(j) Adequate information on available multidisciplinary services;\n(k) Participate in advocacy, policy planning, legislation, service provision, monitoring, research and evaluation;\n(l) Confidentiality of all information, communications and records, not to be disclosed to third parties without written consent of the user or legal representative, except: (1) required by law or court order; (2) the user has expressed consent; (3) a life-threatening emergency exists and disclosure is necessary to prevent harm to the user or others; (4) the user is a minor and the attending mental health professional reasonably believes the user is a victim of child abuse; (5) disclosure is required in an administrative, civil or criminal case against a mental health professional or worker for negligence or breach of professional ethics, to the extent necessary;\n(m) Give informed consent before treatment or care, including the right to withdraw it; consent shall be recorded in the clinical record;\n(n) Participate in formulating the psychosocial care or clinical treatment plan;\n(o) Designate a person of legal age as legal representative, except in impairment or temporary loss of capacity;\n(p) Send and receive uncensored private communication (letter, telephone, electronic) and receive visitors at reasonable times, including the legal representative and CHR representatives;\n(q) Legal services through counsel of choice; if unaffordable, the Public Attorney's Office or a legal aid institution shall assist;\n(r) Access clinical records unless, in the attending professional's opinion, disclosure would harm the user's health or endanger others; withheld records may be contested before the IRB or CHR;\n(s) Be informed, within twenty-four (24) hours of admission to a mental health facility, of these rights in a form and language understood by the user; and\n(t) File complaints of improprieties, abuses and rights violations and seek investigation and action against those who authorized illegal or unlawful involuntary treatment or confinement."],
-["6","Rights of Family Members, Carers and Legal Representatives","(a) Receive appropriate psychosocial support from relevant government agencies;\n(b) With the user's consent, participate in formulating, developing and implementing the individualized treatment plan;\n(c) Apply for release and transfer of the service user to an appropriate facility;\n(d) Participate in advocacy, policy planning, legislation, service provision, monitoring, research and evaluation."],
-["7","Rights of Mental Health Professionals","(a) A safe and supportive work environment;\n(b) Continuous professional development;\n(c) Participate in planning, development and management of services;\n(d) Contribute to standards for evaluating services;\n(e) Participate in mental health policy and service delivery guidelines;\n(f) Except in emergencies, manage and control all aspects of one's practice, including whether to accept or decline a service user;\n(g) Advocate for the rights of a service user whose wishes are at odds with those of the family or legal representative."]]},
+["5","Rights of Service Users",`SEC. 5. Rights of Service Users. - Service users shall enjoy, on an equal and nondiscriminatory basis, all rights guaranteed by the Constitution as well as those recognized under the United Nations Universal Declaration of Human Rights and the Convention on the Rights of Persons with Disabilities and all other relevant international and regional human rights conventions and declarations, including the right to:
+
+(a) Freedom from social, economic, and political discrimination and stigmatization, whether committed by public or private actors;
+
+(b) Exercise all their inherent civil, political, economic, social, religious, educational, and cultural rights respecting individual qualities, abilities, and diversity of background, without discrimination on the basis of physical disability, age, gender, sexual orientation, race, color, language, religion or nationality, ethnic, or social origin;
+
+(c) Access to evidence-based treatment of the same standard and quality, regardless of age, sex, socioeconomic status, race, ethnicity or sexual orientation;
+
+(d) Access to affordable essential health and social services for the purpose of achieving the highest attainable standard of mental health;
+
+(e) Access to mental health services at all levels of the national health care system;
+
+(f) Access to comprehensive and coordinated treatment integrating holistic prevention, promotion, rehabilitation, care and support, aimed at addressing mental health care needs through a multidisciplinary, user-driven treatment and recovery plan;
+
+(g) Access to psychosocial care and clinical treatment in the least restrictive environment and manner;
+
+(h) Humane treatment free from solitary confinement, torture, and other forms of cruel, inhumane, harmful or degrading treatment and invasive procedures not backed by scientific evidence;
+
+(i) Access to aftercare and rehabilitation when possible in the community for the purpose of social reintegration and inclusion;
+
+(j) Access to adequate information regarding available multidisciplinary mental health services;
+
+(k) Participate in mental health advocacy, policy planning, legislation, service provision, monitoring, research and evaluation;
+
+(l) Confidentiality of all information, communications, and records, in whatever form or medium stored, regarding the service user, any aspect of the service user's mental health, or any treatment or care received by the service user, which information, communications, and records shall not be disclosed to third parties without the written consent of the service user concerned or the service user's legal representative, except in the following circumstances:
+
+(1) Disclosure is required by law or pursuant to an order issued by a court of competent jurisdiction;
+
+(2) The service user has expressed consent to the disclosure;
+
+(3) A life-threatening emergency exists and such disclosure is necessary to prevent harm or injury to the service user or to other persons;
+
+(4) The service user is a minor and the attending mental health professional reasonably believes that the service user is a victim of child abuse; or
+
+(5) Disclosure is required in connection with an administrative, civil, or criminal case against a mental health professional or worker for negligence or a breach of professional ethics, to the extent necessary to completely adjudicate, settle, or resolve any issue or controversy involved therein;
+
+(m) Give informed consent before receiving treatment or care, including the right to withdraw such consent. Such consent shall be recorded in the service user's clinical record;
+
+(n) Participate in the development and formulation of the psychosocial care or clinical treatment plan to be implemented;
+
+(o) Designate or appoint a person of legal age to act as his or her legal representative in accordance with this Act, except in cases of impairment or temporary loss of decision-making capacity;
+
+(p) Send or receive uncensored private communication which may include communication by letter, telephone or electronic means, and receive visitors at reasonable times, including the service user's legal representative and representatives from the Commission on Human Rights (CHR);
+
+(q) Legal services, through competent counsel of the service user's choice. In case the service user cannot afford the services of a counsel, the Public Attorney's Office, or a legal aid institution of the service user or representative's choice, shall assist the service user;
+
+(r) Access to their clinical records unless, in the opinion of the attending mental health professional, revealing such information would cause harm to the service user's health or put the safety of others at risk. When any such clinical records are withheld, the service user or his or her legal representative may contest such decision with the internal review board created pursuant to this Act authorized to investigate and resolve disputes, or with the CHR;
+
+(s) Information, within twenty-four (24) hours of admission to a mental health facility, of the rights enumerated in this section in a form and language understood by the service user; and
+
+(t) By oneself or through a legal representative, to file with the appropriate agency, complaints of improprieties, abuses in mental health care, violations of rights of persons with mental health needs, and seek to initiate appropriate investigation and action against those who authorized illegal or unlawful involuntary treatment or confinement, and other violations.`],
+["6","Rights of Family Members, Carers and Legal Representatives",`SEC. 6. Rights of Family Members, Carers and Legal Representatives. - Family members, carers and duly designated or appointed legal representative of the service user shall have the right to:
+
+(a) Receive appropriate psychosocial support from the relevant government agencies;
+
+(b) With the consent of the concerned service user, participate in the formulation, development, and implementation of the service user's individualized treatment plan;
+
+(c) Apply for release and transfer of the service user to an appropriate mental health facility; and
+
+(d) Participate in mental health advocacy, policy planning, legislation, service provision, monitoring, research and evaluation.`],
+["7","Rights of Mental Health Professionals",`SEC. 7. Rights of Mental Health Professionals. - Mental health professionals shall have the right to:
+
+(a) A safe and supportive work environment;
+
+(b) Participate in a continuous professional development program;
+
+(c) Participate in the planning, development, and management of mental health services;
+
+(d) Contribute to the development and regular review of standards for evaluating mental health services provided to service users;
+
+(e) Participate in the development of mental health policy and service delivery guidelines;
+
+(f) Except in emergency situations, manage and control all aspects of his or her practice, including whether or not to accept or decline a service user for treatment; and
+
+(g) Advocate for the rights of a service user, in cases where the service user's wishes are at odds with those of his or her family or legal representative.`] ]},
 {c:"Chapter III",t:"Treatment and Consent",s:[
-["8","Informed Consent to Treatment","Service users must provide informed consent in writing prior to implementation by mental health professionals, workers and other providers of any plan or program of therapy or treatment, including physical or chemical restraint. All persons, including service users, persons with disabilities and minors, shall be presumed to possess legal capacity for the purposes of this Act or any other applicable law, irrespective of the nature or effects of their mental health condition or disability. Children shall have the right to express their views on all matters affecting themselves and have such views given due consideration in accordance with their age and maturity."],
-["9","Advance Directive","A service user may set out preferences in relation to treatment through a signed, dated, and notarized advance directive. It may be revoked by a new advance directive or by a notarized revocation."],
-["10","Legal Representative","A service user may designate a person of legal age as legal representative through a notarized document.\n(a) Functions: (1) provide support and help, represent the user's interests, and receive medical information in accordance with the Act; (2) act as substitute decision maker when a mental health professional has assessed temporary impairment of decision-making capacity; (3) assist the user in exercising rights under the Act; (4) be consulted on any treatment or therapy. Appointment may be revoked by a new appointment or notarized revocation.\n(b) Declining: the appointee may decline but must take reasonable steps to inform the user and the attending professional or worker.\n(c) Failure to appoint: in order, (1) the spouse, unless permanently separated by court decree or abandoned/abandoning for a period not yet ended; (2) non-minor children; (3) either parent by mutual consent, if the user is a minor; (4) chief, administrator or medical director of a mental health care facility; or (5) a person appointed by the court."],
-["11","Supported Decision Making","A service user may designate up to three (3) persons or \"supporters\", including the legal representative. Supporters may: access the user's medical information; consult with the user on any proposed treatment or therapy; and be present at appointments and consultations with professionals, workers and other providers."],
-["12","Internal Review Board","Public and private health facilities must create internal review boards to expeditiously review all cases, disputes and controversies involving treatment, restraint or confinement of service users.\n(a) Composition: (1) a DOH representative; (2) a CHR representative; (3) a person nominated by a service-user and family organization accredited by the Philippine Council for Mental Health; (4) others as determined in the IRR.\n(b) Powers: (1) regular review, monitoring and audit of all treatment, confinement and restraint cases; (2) inspect facilities for cruel, inhumane or degrading conditions; (3) motu proprio or on written complaint or petition by the user, immediate family or legal representative, investigate involuntary treatment, confinement or restraint; (4) take all necessary action to remedy violations, including recommending administrative, civil or criminal action."],
-["13","Exceptions to Informed Consent","During psychiatric or neurologic emergencies, or when there is impairment or temporary loss of decision-making capacity, treatment, restraint or confinement, whether physical or chemical, may be administered under these safeguards:\n(a) In compliance with the user's advance directives, if available, unless doing so would pose an immediate risk of serious harm to the patient or another person;\n(b) Only to the extent necessary, and only while the emergency or impairment exists or persists;\n(c) Upon the order of the attending mental health professional, which must be reviewed by the facility's internal review board within fifteen (15) days from the date of the order, and every fifteen (15) days thereafter while the treatment or restraint continues; and\n(d) In strict accordance with guidelines approved by the appropriate authorities, containing clear criteria for application and termination, fully documented and subject to regular external independent monitoring, review and audit by the internal review boards."]]},
+["8","Informed Consent to Treatment",`Service users must provide informed consent in writing prior to the implementation by mental health professionals, workers, and other service providers of any plan or program of therapy or treatment, including physical or chemical restraint. All persons, including service users, persons with disabilities, and minors, shall be presumed to possess legal capacity for the purposes of this Act or any other applicable law, irrespective of the nature or effects of their mental health condition or disability. Children shall have the right to express their views on all matters affecting themselves and have such views given due consideration in accordance with their age and maturity.`],
+["9","Advance Directive",`A service user may set out his or her preference in relation to treatment through a signed, dated, and notarized advance directive executed for the purpose. An advance directive may be revoked by a new advance directive or by a notarized revocation.`],
+["10","Legal Representative",`A service user may designate a person of legal age to act as his or her legal representative through a notarized document executed for that purpose.
+
+(a) Functions. A service user's legal representative shall:
+
+(1) Provide the service user with support and help, represent his or her interests, and receive medical information about the service user in accordance with this Act;
+
+(2) Act as substitute decision maker when the service user has been assessed by a mental health professional to have temporary impairment of decision-making capacity;
+
+(3) Assist the service user vis-a-vis the exercise of any right provided under this Act; and
+
+(4) Be consulted with respect to any treatment or therapy received by the service user. The appointment of a legal representative may be revoked by the appointment of a new legal representative or by a notarized revocation.
+
+(b) Declining an Appointment. A person thus appointed may decline to act as a service user's legal representative. However, a person who declines to continue being a service user's legal representative must take reasonable steps to inform the service user, as well as the service user's attending mental health professional or worker, of such decision.
+
+(c) Failure to Appoint. If the service user fails to appoint a legal representative, the following persons shall act as the service user's legal representative, in the order provided below:
+
+(1) The spouse, if any, unless permanently separated from the service user by a decree issued by a court of competent jurisdiction, or unless such spouse has abandoned or been abandoned by the service user for any period which has not yet come to an end;
+
+(2) Non-minor children;
+
+(3) Either parent by mutual consent, if the service user is a minor;
+
+(4) Chief, administrator, or medical director of a mental health care facility; or
+
+(5) A person appointed by the court.`],
+["11","Supported Decision Making",`A service user may designate up to three (3) persons or “supporters”, including the service user's legal representative, for the purposes of supported decision making. These supporters shall have the authority to: access the service user's medical information; consult with the service user vis-a-vis any proposed treatment or therapy; and be present during the service user's appointments and consultations with mental health professionals, workers, and other service providers during the course of treatment or therapy.`],
+["12","Internal Review Board",`Public and private health facilities are mandated to create their respective internal review boards to expeditiously review all cases, disputes, and controversies involving the treatment, restraint or confinement of service users within their facilities.
+
+(a) The Board shall be composed of the following:
+
+(1) A representative from the Department of Health (DOH);
+
+(2) A representative from the Commission on Human Rights (CHR);
+
+(3) A person nominated by an organization representing service users and their families duly accredited by the Philippine Council for Mental Health; and
+
+(4) Other designated members deemed necessary, to be determined under the rules and regulations (IRR).
+
+(b) Each internal review board shall have the following powers and functions:
+
+(1) Conduct regular review, monitoring, and audit of all cases involving the treatment, confinement or restraint of service users within its jurisdiction;
+
+(2) Inspect mental health facilities to ensure that service users therein are not being subjected to cruel, inhumane, or degrading conditions or treatment;
+
+(3) Motu proprio, or upon the receipt of a written complaint or petition filed by a service user or a service user's immediate family or legal representative, investigate cases, disputes, and controversies involving the involuntary treatment, confinement or restraint of a service user; and
+
+(4) Take all necessary action to rectify or remedy violations of a service user's rights vis-a-vis treatment, confinement or restraint, including recommending that an administrative, civil, or criminal case be filed by the appropriate government agency.`],
+["13","Exceptions to Informed Consent",`During psychiatric or neurologic emergencies, or when there is impairment or temporary loss of decision-making capacity on the part of a service user, treatment, restraint or confinement, whether physical or chemical, may be administered or implemented pursuant to the following safeguards and conditions:
+
+(a) In compliance with the service user's advance directives, if available, unless doing so would pose an immediate risk of serious harm to the patient or another person;
+
+(b) Only to the extent that such treatment or restraint is necessary, and only while a psychiatric or neurologic emergency, or impairment or temporary loss of capacity, exists or persists;
+
+(c) Upon the order of the service user's attending mental health professional, which order must be reviewed by the internal review board of the mental health facility where the patient is being treated within fifteen (15) days from the date such order was issued, and every fifteen (15) days thereafter while the treatment or restraint continues; and
+
+(d) That such involuntary treatment or restraint shall be in strict accordance with guidelines approved by the appropriate authorities, which must contain clear criteria regulating the application and termination of such medical intervention, and fully documented and subject to regular external independent monitoring, review, and audit by the internal review boards established by this Act.`]]},
 {c:"Chapter IV",t:"Mental Health Services",s:[
-["14","Quality of Mental Health Services","Services shall be: (a) based on medical and scientific research findings; (b) responsive to clinical, gender, cultural, ethnic and other special needs; (c) in the most appropriate and least restrictive setting; (d) age appropriate; and (e) provided by professionals and workers in a manner that ensures accountability."],
-["15","Services at the Community Level","Responsive primary mental health services shall be developed and integrated into basic health services, particularly at city, municipal and barangay level. Standards are set by the DOH in consultation with stakeholders. Every LGU and academic institution shall create its own program per general guidelines of the Philippine Council for Mental Health, in coordination with agencies and the private sector."],
-["16","Community-based Mental Health Care Facilities","The DOH shall fund and assist in operating community-based facilities in provinces, cities and clusters of municipalities based on population need. Each shall have adequate room or clinic and a complement of mental health professionals, allied professionals, support staff, trained barangay health workers (BHWs), volunteer family members of service users, basic equipment and supplies, and adequate stock of medicines appropriate to that level."],
-["17","Reportorial Requirements","LGU health offices shall report quarterly to the Council through the DOH: number of service users served, kinds of mental illness or disability, duration and result of treatment, and users' age, gender, educational attainment and employment, without disclosing identities."],
-["18","Services in Regional, Provincial and Tertiary Hospitals","All such hospitals, including private hospitals serving paying patients, shall provide: (a) short-term in-patient care in a small psychiatric or neurologic ward for acute symptoms; (b) partial hospital care; (c) out-patient services in collaboration with primary care mental health programs; (d) home care for users with special needs (long-term hospitalization, non-compliance or inadequate treatment, absence of immediate family); (e) coordination with drug rehabilitation centers; (f) a referral system with public and private health and social welfare providers."],
-["19","Duties of Mental Health Facilities","(a) Establish policies and protocols to minimize restrictive care and involuntary treatment; (b) inform users of their rights; (c) give every user complete information on the treatment plan; (d) obtain informed consent before any procedure or plan, except in emergencies or impaired capacity; (e) maintain a register of all treatments and procedures administered; (f) ensure legal representatives are designated only after the Act's requirements are observed, respecting the patient's autonomy and preferences as far as possible."],
-["20","Drug Screening Services","Consistent with treating drug dependency as a mental health issue, each local health care facility must be capable of drug screening."],
-["21","Suicide Prevention","Mental health services shall include mechanisms for suicide intervention, prevention and response, with particular attention to youth. 24/7 hotlines shall be set up and existing hotlines strengthened."],
-["22","Public Awareness","The DOH and LGUs shall sustain a nationwide multimedia campaign on protection and promotion of mental health and rights, including nutrition, stress handling, guidance and counselling."]]},
-{c:"Chapter V",t:"Education, Promotion in Schools and Workplace",s:[
-["23","Integration into the Educational System","(a) Age-appropriate mental health content in the curriculum at all levels; (b) psychiatry and neurology as required subjects in all medical and allied health courses, including post-graduate health courses."],
-["24","Promotion in Educational Institutions","Schools, colleges, universities and technical schools shall develop policies and programs for students, educators and employees to raise awareness, identify and support at-risk individuals, and facilitate access and referral to treatment and psychosocial support. All public and private educational institutions shall have a complement of mental health professionals."],
-["25","Promotion and Policies in the Workplace","Employers shall develop policies and programs to raise awareness, correct stigma and discrimination, identify and support at-risk individuals, and facilitate access to treatment and psychosocial support."]]},
+["14","Quality of Mental Health Services",`SEC. 14. Quality of Mental Health Services. - Mental health services provided pursuant to this Act shall be:
+
+(a) Based on medical and scientific research findings;
+
+(b) Responsive to the clinical, gender, cultural and ethnic and other special needs of the individuals being served;
+
+(c) Most appropriate and least restrictive setting;
+
+(d) Age appropriate; and
+
+(e) Provided by mental health professionals and workers in a manner that ensures accountability.`],
+["15","Mental Health Services at the Community Level",`SEC. 15. Mental Health Services at the Community Level. - Responsive primary mental health services shall be developed and integrated as part of the basic health services at the appropriate level of care, particularly at the city, municipal, and barangay level. The standards of mental health services shall be determined by the DOH in consultation with stakeholders based on current evidences.
+
+Every local government unit (LGU) and academic institution shall create their own program in accordance with the general guidelines set by the Philippine Council for Mental Health, created under this Act, in coordination with other stakeholders. LGUs and academic institutions shall coordinate with all concerned government agencies and the private sector for the implementation of the program.`],
+["16","Community-based Mental Health Care Facilities",`SEC. 16. Community-based Mental Health Care Facilities. - The national government through the DOH shall fund the establishment and assist in the operation of community-based mental health care facilities in the provinces, cities and cluster of municipalities in the entire country based on the needs of the population, to provide appropriate mental health care services, and enhance the rights-based approach to mental health care.
+
+Each community-based mental health care facility shall, in addition to adequate room, office or clinic, have a complement of mental health professionals, allied professionals, support staff, trained barangay health workers (BHWs), volunteer family members of patients or service users, basic equipment and supplies, and adequate stock of medicines appropriate at that level.`],
+["17","Reportorial Requirements",`SEC. 17. Reportorial Requirements. - LGUs through their health offices shall make a quarterly report to the Philippine Council for Mental Health through the DOH. The report shall include, among others, the following data: number of patients/service users attended to and/or served, the respective kinds of mental illness or disability, duration and result of the treatment, and patients/service users' age, gender, educational attainment and employment without disclosing the identities of such patients/service users for confidentiality.`],
+["18","Psychiatric, Psychosocial, and Neurologic Services in Regional, Provincial, and Tertiary Hospitals",`SEC. 18. Psychiatric, Psychosocial, and Neurologic Services in Regional, Provincial, and Tertiary Hospitals. - All regional, provincial, and tertiary hospitals, including private hospitals rendering service to paying patients, shall provide the following psychiatric, psychosocial, and neurologic services:
+
+(a) Short-term, in-patient hospital care in a small psychiatric or neurologic ward for service users exhibiting acute psychiatric or neurologic symptoms;
+
+(b) Partial hospital care for those exhibiting psychiatric symptoms or experiencing difficulties vis-a-vis their personal and family circumstances;
+
+(c) Out-patient services in close collaboration with existing mental health programs at primary health care centers in the same area;
+
+(d) Home care services for service users with special needs as a result of, among others, long-term hospitalization, noncompliance with or inadequacy of treatment, and absence of immediate family;
+
+(e) Coordination with drug rehabilitation centers vis-a-vis the care, treatment, and rehabilitation of persons suffering from addiction and other substance-induced mental health conditions; and
+
+(f) A referral system involving other public and private health and social welfare service providers, for the purpose of expanding access to programs aimed at preventing mental illness and managing the condition of persons at risk of developing mental, neurologic, and psychosocial problems.`],
+["19","Duties and Responsibilities of Mental Health Facilities",`SEC. 19. Duties and Responsibilities of Mental Health Facilities. - Mental health facilities shall:
+
+(a) Establish policies, guidelines, and protocols for minimizing the use of restrictive care and involuntary treatment;
+
+(b) Inform service users of their rights under this Act and all other pertinent laws and regulations;
+
+(c) Provide every service user, whether admitted for voluntary treatment, with complete information regarding the plan of treatment to be implemented;
+
+(d) Ensure that informed consent is obtained from service users prior to the implementation of any medical procedure or plan of treatment or care, except during psychiatric or neurologic emergencies or when the service user has impairment or temporary loss of decision-making capacity;
+
+(e) Maintain a register containing information on all medical treatments and procedures administered to service users; and
+
+(f) Ensure that legal representatives are designated or appointed only after the requirements of this Act and the procedures established for the purpose have been observed, which procedures should respect the autonomy and preferences of the patient as far as possible.`],
+["20","Drug Screening Services",`SEC. 20. Drug Screening Services. - Pursuant to its duty to provide mental health services and consistent with the policy of treating drug dependency as a mental health issue, each local health care facility must be capable of conducting drug screening.`],
+["21","Suicide Prevention",`SEC. 21. Suicide Prevention. - Mental health services shall also include mechanisms for suicide intervention, prevention, and response strategies, with particular attention to the concerns of the youth. Twenty-four seven (24/7) hotlines, to provide assistance to individuals with mental health conditions, especially individuals at risk of committing suicide, shall be set up, and existing hotlines shall be strengthened.`],
+["22","Public Awareness",`SEC. 22. Public Awareness. - The DOH and the LGUs shall initiate and sustain a heightened nationwide multimedia campaign to raise the level of public awareness on the protection and promotion of mental health and rights including, but not limited to, mental health and nutrition, stress handling, guidance and counselling, and other elements of mental health.`]]},
+{c:"Chapter V",t:"Education, Promotion of Mental Health in Educational Institutions and in the Workplace",s:[
+["23","Integration of Mental Health into the Educational System",`SEC. 23. Integration of Mental Health into the Educational System. - The State shall ensure the integration of mental health into the educational system, as follows:
+
+(a) Age-appropriate content pertaining to mental health shall be integrated into the curriculum at all educational levels; and
+
+(b) Psychiatry and neurology shall be required subjects in all medical and allied health courses, including post-graduate courses in health.`],
+["24","Mental Health Promotion in Educational Institutions",`SEC. 24. Mental Health Promotion in Educational Institutions. - Educational institutions, such as schools, colleges, universities, and technical schools, shall develop policies and programs for students, educators, and other employees designed to: raise awareness on mental health issues, identify and provide support and services for individuals at risk, and facilitate access, including referral mechanisms of individuals with mental health conditions to treatment and psychosocial support.
+
+All public and private educational institutions shall be required to have a complement of mental health professionals.`],
+["25","Mental Health Promotion and Policies in the Workplace",`SEC. 25. Mental Health Promotion and Policies in the Workplace. - Employers shall develop appropriate policies and programs on mental health in the workplace designed to: raise awareness on mental health issues, correct the stigma and discrimination associated with mental health conditions, identify and provide support for individuals at risk, and facilitate access of individuals with mental health conditions to treatment and psychosocial support.`]]},
 {c:"Chapter VI",t:"Capacity Building, Research and Development",s:[
-["26","Capacity Building, Reorientation and Training","Professionals, workers and providers shall undergo training to deliver evidence-based, gender-sensitive, culturally-appropriate and human rights-oriented services, with emphasis on community and public health aspects."],
-["27","Capacity Building of BHWs","The DOH disseminates information and training programs to LGUs. LGUs, with DOH technical assistance, train BHWs and other barangay volunteers on mental health promotion. The DOH assists LGUs with supplies and equipment BHWs need."],
-["28","Research and Development","Research shall produce data and evidence for a culturally-relevant national program incorporating indigenous concepts and practices. Ethical standards: free and informed consent; no privileges or remuneration to researchers for recruiting participants; no potentially harmful research; approval by an independent ethics committee. Research shall also cover nonmedical, traditional or alternative practices."],
-["29","National Center for Mental Health (NCMH)","The NCMH, formerly the National Mental Hospital, as the premier DOH training and research center, shall expand its capacity for research and development of mental and neurological interventions."]]},
+["26","Capacity Building, Reorientation, and Training",`SEC. 26. Capacity Building, Reorientation, and Training. - In close coordination with mental health facilities, academic institutions, and other stakeholders, mental health professionals, workers, and other service providers shall undergo capacity building, reorientation, and training to develop their ability to deliver evidence-based, gender-sensitive, culturally-appropriate and human rights-oriented mental health services, with emphasis on the community and public health aspects of mental health.`],
+["27","Capacity Building of Barangay Health Workers (BHWs)",`SEC. 27. Capacity Building of Barangay Health Workers (BHWs). - The DOH shall be responsible for disseminating information and providing training programs to LGUs. The LGUs, with technical assistance from the DOH, shall be responsible for the training of BHWs and other barangay volunteers on the promotion of mental health. The DOH shall provide assistance to LGUs with medical supplies and equipment needed by BHWs to carry out their functions effectively.`],
+["28","Research and Development",`SEC. 28. Research and Development. - Research and development shall be undertaken, in collaboration with academic institutions, psychiatric, neurologic, and related associations, and nongovernment organizations, to produce the information, data, and evidence necessary to formulate and develop a culturally-relevant national mental health program incorporating indigenous concepts and practices related to mental health.
+
+High ethical standards in mental health research shall be promoted to ensure that: research is conducted only with the free and informed consent of the persons involved; researchers do not receive any privileges, compensation or remuneration in exchange for encouraging or recruiting participants; potentially harmful or dangerous research is not undertaken; and all research is approved by an independent ethics committee, in accordance with applicable law.
+
+Research and development shall also be undertaken vis-a-vis nonmedical, traditional or alternative practices.`],
+["29","National Center for Mental Health (NCMH)",`SEC. 29. The National Center for Mental Health (NCMH). - The NCMH, formerly the National Mental Hospital, being the premiere training and research center under the DOH, shall expand its capacity for research and development of interventions on mental and neurological services in the country.`]]},
 {c:"Chapter VII",t:"Duties of Government Agencies",s:[
-["30","Department of Health","(a) National mental health program and awareness framework; (b) safe, therapeutic, hygienic environments with privacy; regulate, license and monitor facilities; (c) integrate mental health into the routine health information system with data disaggregated by sex and age, including completed and attempted suicides; (d) research capacity and centers of excellence; (e) uphold protection against torture and cruel, inhumane, degrading treatment; (f) coordinate with PhilHealth for coverage equivalent to physical disorders of comparable impact; (g) prohibit forced or inadequately remunerated labor in facilities unless part of accepted therapy; (h) support services for families, co-workers and providers; (i) alternatives to institutionalization; (j) ensure all facilities establish IRBs and promulgate rules; (k) balanced community-based and hospital-based services from barangay to national level; (l) human rights training for all health workers."],
-["31","Commission on Human Rights","(a) Mechanisms to investigate complaints of impropriety and abuse, particularly in involuntary care; (b) inspect facilities; (c) investigate all cases of involuntary treatment, confinement or care for legality, quality and appropriateness; (d) appoint a focal commissioner for mental health, who may take actions to remedy violations, including recommending administrative, civil or criminal cases."],
-["32","Investigative Role of the CHR","Limited to violations of civil and political rights, consistent with Sec. 18, Art. XIII of the Constitution."],
-["33","Complaint and Investigation","The DOH, CHR and DOJ receive complaints of improprieties and abuses and initiate investigation and action. The CHR shall inspect all places where psychiatric service users are held, and may motu proprio file complaints against noncompliant institutions."],
-["34","DepEd, CHED and TESDA","Integrate age-appropriate mental health content into curricula; develop guidelines and standards for evidence-based programs; pursue strategies promoting well-being in schools; ensure promotion is complemented by qualified mental health professionals."],
-["35","DOLE and CSC","Develop guidelines and standards on evidence-based workplace mental health programs; develop policies that promote mental health and address stigma and discrimination."],
-["36","Department of Social Welfare and Development","(a) Refer service users to facilities, professionals and providers; (b) provide or facilitate access to public or group housing, counselling, therapy, livelihood training and skills development; (c) with LGUs and DOH, develop community resilience and psychosocial well-being training, including psychosocial support during and after disasters."],
-["37","Local Government Units","(a) Regulations and guidelines, including a local ordinance on mental health; (b) integrate services in basic health care in primary facilities and hospitals; (c) training programs for providers; (d) promote deinstitutionalization and recovery-based approaches; (e) establish, reorient and modernize facilities; (f) where independent living is unavailable, provide or facilitate public housing, vocational training, skills development, and disability or pension benefits; (g) refer service users; (h) establish a multi-sectoral stakeholder network for identification, management and prevention."],
-["38","Upgrading of Local Hospitals and Health Care Facilities","Each LGU, based on data from its local health office, shall establish or upgrade hospitals and facilities with qualified personnel, equipment and supplies to provide mental health services and address psychiatric emergencies. People in geographically isolated and/or highly populated and depressed areas shall have the same level of access, through other means such as home visits or mobile health care clinics as needed. The national government shall provide additional funding and assistance."]]},
+["30","Duties and Responsibilities of the Department of Health (DOH)",`SEC. 30. Duties and Responsibilities of the Department of Health (DOH). - To achieve the policy and objectives of this Act, the DOH shall:
+
+(a) Formulate, develop, and implement a national mental health program. In coordination with relevant government agencies, create a framework for Mental Health Awareness Program to promote effective strategies regarding mental health care, its components, and services, as well as to improve awareness on stigmatized medical conditions;
+
+(b) Ensure that a safe, therapeutic, and hygienic environment, with sufficient privacy exists in all mental health facilities and, for this purpose, shall be responsible for the regulation, licensing, monitoring, and assessment of all mental health facilities;
+
+(c) Integrate mental health into the routine health information systems and identify, collate, routinely report and use core mental health data disaggregated by sex and age, and health outcomes, including data on complete and attempted suicides, in order to improve mental health service delivery, promotion and prevention strategies;
+
+(d) Improve research capacity and academic collaboration on national priorities for research in mental health, particularly operational research with direct relevance to service development, implementation, and the exercise of human rights by persons with mental health conditions, including establishment of centers of excellence;
+
+(e) Ensure that all public and private mental health institutions uphold the right of patients to be protected against torture or cruel, inhumane, and degrading treatment;
+
+(f) Coordinate with the Philippine Health Insurance Corporation to ensure that insurance packages equivalent to those covering physical disorders of comparable impact to the patient, as measured by Disability-Adjusted Life Year or other methodologies, are available to patients affected by mental health conditions;
+
+(g) Prohibit forced or inadequately remunerated labor within mental health facilities, unless such labor is justified as part of an accepted therapeutic treatment program;
+
+(h) Provide support services for families and co-workers of service users, mental health professionals, workers, and other service providers;
+
+(i) Develop alternatives to institutionalization, particularly community, recovery-based approaches to treatment aimed at receiving patients discharged from hospitals, meeting the needs expressed by persons with mental health conditions, and respecting their autonomy, decisions, dignity, and privacy;
+
+(j) Ensure that all health facilities shall establish their respective internal review boards. In consultation with stakeholders, the DOH shall promulgate the rules and regulations necessary for the efficient disposition of all proceedings, matters, and cases referred to or reviewed by the internal review board;
+
+(k) Establish a balanced system of community-based and hospital-based mental health services at all levels of the public health care system from the barangay, municipal, city, provincial, regional to the national level; and
+
+(l) Ensure that all health workers shall undergo human rights trainings in coordination with appropriate agencies or organizations.`],
+["31","Duties and Responsibilities of the Commission on Human Rights (CHR)",`SEC. 31. Duties and Responsibilities of the Commission on Human Rights (CHR). - The CHR shall:
+
+(a) Establish mechanisms to investigate, address, and act upon complaints of impropriety and abuse in the treatment and care received by service users, particularly when such treatment or care is administered or implemented involuntarily;
+
+(b) Inspect mental health facilities to ensure that service users therein are not being subjected to cruel, inhumane, or degrading conditions or treatment;
+
+(c) Investigate all cases involving involuntary treatment, confinement, or care of service users, for the purpose of ensuring strict compliance with domestic and international standards, respecting the legality, quality, and appropriateness of such treatment, confinement, or care; and
+
+(d) Appoint a focal commissioner for mental health tasked with protecting and promoting the rights of service users and other persons utilizing mental health services or confined in mental health facilities, as well as the rights of mental health professionals and workers. The focal commissioner shall, upon a finding that a mental health facility, mental health professional, or mental health worker has violated any of the rights provided for in this Act, take all necessary actions to rectify or remedy such violation, including recommending that an administrative, civil, or criminal case be filed by the appropriate government agency.`],
+["32","Investigative Role of the Commission on Human Rights (CHR)",`SEC. 32. Investigative Role of the Commission on Human Rights (CHR). - The investigative role of the CHR as provided in the pertinent provisions of this Act shall be limited to all violations of human rights involving civil and political rights consistent with the powers and functions of the CHR under Section 18 of Article XIII of the Constitution.`],
+["33","Complaint and Investigation",`SEC. 33. Complaint and Investigation. - The DOH, CHR and Department of Justice (DOJ) shall receive all complaints of improprieties and abuses in mental health care and shall initiate appropriate investigation and action.
+
+Further, the CHR shall inspect all places where psychiatric service users are held for involuntary treatment or otherwise, to ensure full compliance with domestic and international standards governing the legal basis for treatment and detention, quality of medical care and living standards. The CHR may, motu proprio, file a complaint against erring mental health care institutions should they find any noncompliance, based on its investigations.`],
+["34","Duties and Responsibilities of DepEd, CHED and TESDA",`SEC. 34. Duties and Responsibilities of the Department of Education (DepED), Commission on Higher Education (CHED), and the Technical Education and Skills Development Authority (TESDA). - The DepED, CHED and TESDA shall:
+
+(a) Integrate age-appropriate content pertaining to mental health into the curriculum at all educational levels both in public and private institutions;
+
+(b) Develop guidelines and standards on age-appropriate and evidence-based mental health programs both in public and private institutions;
+
+(c) Pursue strategies that promote the realization of mental health and well-being in educational institutions; and
+
+(d) Ensure that mental health promotions in public and private educational institutions shall be adequately complemented with qualified mental health professionals.`],
+["35","Duties and Responsibilities of DOLE and CSC",`SEC. 35. Duties and Responsibilities of the Department of Labor and Employment (DOLE) and the Civil Service Commission (CSC). - The DOLE and the CSC shall:
+
+(a) Develop guidelines and standards on appropriate and evidence-based mental health programs for the workplace as described in this Act; and
+
+(b) Develop policies that promote mental health in the workplace and address stigma and discrimination suffered by people with mental health conditions.`],
+["36","Duties and Responsibilities of the Department of Social Welfare and Development (DSWD)",`SEC. 36. Duties and Responsibilities of the Department of Social Welfare and Development (DSWD). - The DSWD shall:
+
+(a) Refer service users to mental health facilities, professionals, workers, and other service providers for appropriate care;
+
+(b) Provide or facilitate access to public or group housing facilities, counselling, therapy, and livelihood training and other available skills development programs; and
+
+(c) In coordination with the LGUs and the DOH, formulate, develop, and implement community resilience and psychosocial well-being training, including psychosocial support services during and after natural disasters and other calamities.`],
+["37","Duties and Responsibilities of the Local Government Units (LGUs)",`SEC. 37. Duties and Responsibilities of the Local Government Units (LGUs). - The LGUs shall:
+
+(a) Review, formulate, and develop the regulations and guidelines necessary to implement an effective mental health care and wellness policy within the territorial jurisdiction of each LGU, including the passage of a local ordinance on the subject of mental health, consistent with existing relevant national policies and guidelines;
+
+(b) Integrate mental health care services in the basic health care services, and ensure that mental health services are provided in primary health care facilities and hospitals, within their respective territorial jurisdictions;
+
+(c) Establish training programs necessary to enhance the capacity of mental health service providers at the LGU level, in coordination with appropriate national government agencies and other stakeholders;
+
+(d) Promote deinstitutionalization and other recovery-based approaches to the delivery of mental health care services;
+
+(e) Establish, reorient, and modernize mental health care facilities necessary to adequately provide mental health services, within their respective territorial jurisdictions;
+
+(f) Where independent living arrangements are not available, provide or facilitate access to public housing facilities, vocational training and skills development programs, and disability or pension benefits;
+
+(g) Refer service users to mental health facilities, professionals, workers, and other service providers for appropriate care; and
+
+(h) Establish a multi-sectoral stakeholder network for the identification, management, and prevention of mental health conditions.`],
+["38","Upgrading of Local Hospitals and Health Care Facilities",`SEC. 38. Upgrading of Local Hospitals and Health Care Facilities. - Each LGU, upon its determination of the necessity based on well-supported data provided by its local health office, shall establish or upgrade hospitals and facilities with adequate and qualified personnel, equipment, and supplies to be able to provide mental health services and to address psychiatric emergencies: Provided, That people in geographically isolated and/or highly populated and depressed areas shall have the same level of access and shall not be neglected by providing other means such as home visits or mobile health care clinics, as needed: Provided, further, That the national government shall provide additional funding and other necessary assistance for the effective implementation of this provision.`]]},
 {c:"Chapter VIII",t:"The Philippine Council for Mental Health",s:[
-["39","Mandate","The Council is a policy-making, planning, coordinating and advisory body attached to the DOH to oversee implementation of the Act, particularly protection of rights and delivery of unified, integrated services."],
-["40","Duties and Functions","Develop and update a national multi-sectoral strategic plan (targets and strategies on rights and well-being; an integrated service delivery network including human resources and information systems; budget and investment plan); monitor implementation and assess impact; ensure implementation and issue orders or recommendations; coordinate agencies, LGUs and NGOs; coordinate with international organizations on data, research and treatment modalities; coordinate joint planning and budgeting; call on agencies for data."],
-["41","Composition","Secretary of Health (Chairperson); Secretaries of DepEd, DOLE and DILG; Chairpersons of CHR and CHED; one representative each from academe/research, medical or health professional organizations, and NGOs involved in mental health. Non-government members serve three-year terms, appointed by the President from three nominees each."],
-["42","DOH Mental Health Division","A Mental Health Division under the Disease Prevention and Control Bureau, staffed by qualified specialists with permanent appointments and adequate budget, implements the National Mental Health Program and serves as the Council's secretariat."]]},
+["39","Mandate",`SEC. 39. Mandate. - The Philippine Council for Mental Health, herein referred to as the Council, is hereby established as a policy-making, planning, coordinating and advisory body, attached to the DOH to oversee the implementation of this Act, particularly the protection of the rights and freedom of persons with psychiatric, neurologic, and psychosocial needs and the delivery of a rational, unified and integrated mental health services responsive to the needs of the Filipino people.`],
+["40","Duties and Functions",`SEC. 40. Duties and Functions. - The Council shall exercise the following duties:
+
+(a) Develop and periodically update, in coordination with the DOH, a national multi-sectoral strategic plan for mental health that further operationalizes the objectives of this Act which shall include the following:
+
+(1) The country's targets and strategies in protecting the rights of Filipinos with mental health needs and in promoting mental health and the well-being of Filipinos, as provided in this Act;
+
+(2) The government's plan in establishing a rational, unified and integrated service delivery network for mental health services including the development of health human resources and information system for mental health; and
+
+(3) The budgetary requirements and a corollary investment plan that shall identify the sources of funds for its implementation;
+
+(b) Monitor the implementation of the rules and regulations of this Act and the strategic plan for mental health; undertake mid-term assessments and evaluations of the impact of the interventions in achieving the objectives of this Act;
+
+(c) Ensure the implementation of the policies provided in this Act, and issue or cause issuance of orders, or make recommendations to the implementing agencies as the Council considers appropriate;
+
+(d) Coordinate the activities and strengthen working relationships among national government agencies, LGUs, and nongovernment agencies involved in mental health promotion;
+
+(e) Coordinate with foreign and international organizations regarding data collection, research and treatment modalities for persons with psychiatric, neurologic and substance use disorders and other addictions;
+
+(f) Coordinate joint planning and budgeting of relevant agencies to ensure funds for programs and projects indicated in the strategic medium-term plan are included in the agency's annual budget;
+
+(g) Call upon other government agencies and stakeholders to provide data and information in formulating policies and programs, and to assist the Council in the performance of its functions; and
+
+(h) Perform other duties and functions necessary to carry out the purposes of this Act.`],
+["41","Composition",`SEC. 41. Composition. - The Council shall be composed of the following:
+
+(a) Secretary of DOH as Chairperson;
+
+(b) Secretary of DepED;
+
+(c) Secretary of DOLE;
+
+(d) Secretary of the Department of the Interior and Local Government (DILG);
+
+(e) Chairperson of CHR;
+
+(f) Chairperson of CHED;
+
+(g) One (1) representative from the academe/research;
+
+(h) One (1) representative from medical or health professional organizations; and
+
+(i) One (1) representative from nongovernment organizations (NGOs) involved in mental health issues.
+
+The members of the Council from the government may designate their permanent authorized representatives.
+
+Within thirty (30) days from the effectivity of this Act, the members of the Council from the academe/research, private sector and NGOs shall be appointed by the President of the Philippines from a list of three (3) nominees submitted by the organizations, as endorsed by the Council.
+
+Members representing the academe/research, private sector and NGOs of the Council shall serve for a term of three (3) years. In case a vacancy occurs in the Council, any person chosen to fill the position vacated by a member of the Council shall only serve the unexpired term of said member.`],
+["42","Creation of the DOH Mental Health Division",`SEC. 42. Creation of the DOH Mental Health Division. - There shall be created in the DOH, a Mental Health Division, under the Disease Prevention and Control Bureau, staffed by qualified mental health specialists and support staff with permanent appointments and supported with an adequate yearly budget. It shall implement the National Mental Health Program and, in addition, shall also serve as the secretariat of the Council.`]]},
 {c:"Chapter IX",t:"Mental Health for Drug Dependents",s:[
-["43","Voluntary Submission of a Drug Dependent to Confinement, Treatment and Rehabilitation","Persons who avail of voluntary submission and persons charged under RA 9165 shall undergo examination for mental health conditions and, if found to have any, shall be covered by this Act."]]},
+["43","Voluntary Submission of a Drug Dependent to Confinement, Treatment and Rehabilitation",`SEC. 43. Voluntary Submission of a Drug Dependent to Confinement, Treatment and Rehabilitation. - Persons who avail of the voluntary submission provision and persons charged pursuant to Republic Act No. 9165, otherwise known as the "Comprehensive Dangerous Drugs Act of 2002", shall undergo an examination for mental health conditions and, if found to have mental health conditions, shall be covered by the provisions of this Act.`]]},
 {c:"Chapter X",t:"Miscellaneous Provisions",s:[
-["44","Penalty Clause","Any person who commits any of the following, upon conviction by final judgment, shall be punished by imprisonment of not less than six (6) months but not more than two (2) years, or a fine of not less than Ten thousand pesos (P10,000.00) but not more than Two hundred thousand pesos (P200,000.00), or both:\n(a) Failure to secure informed consent of the service user, unless under the Sec. 13 exceptions;\n(b) Violation of confidentiality of information;\n(c) Discrimination against a person with a mental health condition;\n(d) Administering inhumane, cruel, degrading or harmful treatment not based on medical or scientific evidence.\nIf committed by a juridical person, the penalty is imposed on the directors, officers, employees or other officials responsible. An alien offender shall be deported after serving sentence. Penalties are without prejudice to administrative or civil liability of the offender or the facility."],
-["45","Appropriations","Initial implementation is charged against 2018 DOH appropriations; later funding is based on the Council's strategic plan and included in the National Expenditure Program."],
-["46","Implementing Rules and Regulations","The Secretary of Health, with CHR, DSWD, DILG, DepEd, CHED, TESDA, DOLE, CSC, and service-user, professional and provider organizations, issues the IRR within 120 days of effectivity."],
-["47-49","Separability, Repealing, Effectivity","Invalid provisions do not affect the rest; inconsistent laws and issuances are modified, superseded or repealed; the Act takes effect fifteen (15) days after publication in the Official Gazette or two newspapers of general circulation. Approved June 20, 2018."]]}
+["44","Penalty Clause",`SEC. 44. Penalty Clause. - Any person who commits any of the following acts shall, upon conviction by final judgment, be punished by imprisonment of not less than six (6) months, but not more than two (2) years, or a fine of not less than Ten thousand pesos (P10,000.00), but not more than Two hundred thousand pesos (P200,000.00), or both, at the discretion of the court:
+
+(a) Failure to secure informed consent of the service user, unless it falls under the exceptions provided under Section 13 of this Act;
+
+(b) Violation of the confidentiality of information, as defined under Section 4(c) of this Act;
+
+(c) Discrimination against a person with a mental health condition, as defined under Section 4(e) of this Act; and
+
+(d) Administering inhumane, cruel, degrading or harmful treatment not based on medical or scientific evidence as indicated in Section 5(b) of this Act.
+
+If the violation is committed by a juridical person, the penalty provided for in this Act shall be imposed upon the directors, officers, employees or other officials or persons therein responsible for the offense.
+
+If the violation is committed by an alien, the alien offender shall be immediately deported after service of sentence without need of further proceedings.
+
+These penalties shall be without prejudice to the administrative or civil liability of the offender, or the facility where such violation occurred.`],
+["45","Appropriations",`SEC. 45. Appropriations. - The amount needed for the initial implementation of this Act shall be charged against the 2018 appropriations of the DOH for the following: maintenance and other operating expenses of the national mental health program, capital outlays for the development of psychiatric facilities among selected DOH hospitals, and formulation of the strategic plan for mental health.
+
+For the succeeding years, the amount allocated for mental health in the DOH budget and in the budget of other agencies with specific mandates provided in this Act shall be based on the strategic plan formulated by the Council, in coordination with other stakeholders. The amount shall be included in the National Expenditure Program (NEP) as basis for the General Appropriations Bill (GAB).`],
+["46","Implementing Rules and Regulations (IRR)",`SEC. 46. Implementing Rules and Regulations (IRR). - The Secretary of Health, in coordination with the CHR, DSWD, DILG, DepED, CHED, TESDA, DOLE, CSC and together with associations or organizations representing service users and mental health professionals, workers, and other service providers, shall issue the IRR necessary for the effective implementation of this Act within one hundred twenty (120) days from the effectivity thereof.`],
+["47","Separability Clause",`SEC. 47. Separability Clause. - If any provision of this Act is declared unconstitutional or invalid by a court of competent jurisdiction, the remaining provisions not affected thereby shall continue to be in full force and effect.`],
+["48","Repealing Clause",`SEC. 48. Repealing Clause. - All laws, decrees, executive orders, department or memorandum orders and other administrative issuances or parts thereof which are inconsistent with the provisions of this Act are hereby modified, superseded or repealed accordingly.`],
+["49","Effectivity",`SEC. 49. Effectivity. - This Act shall take effect fifteen (15) days after its publication in the Official Gazette or in at least two (2) newspapers of general circulation.
+
+Approved,
+
+(SGD.) PANTALEON D. ALVAREZ
+Speaker of the House of Representatives
+
+(SGD.) AQUILINO "KOKO" PIMENTEL III
+President of the Senate
+
+This Act which is a consolidation of Senate Bill No. 1354 and House Bill No. 6452 was finally passed by the Senate and the House of Representatives on February 12, 2018.
+
+(SGD.) CESAR STRAIT PAREJA
+Secretary General, House of Representatives
+
+(SGD.) LUTGARDO B. BARBO
+Secretary of the Senate
+
+Approved: JUN 20 2018
+
+(SGD.) RODRIGO ROA DUTERTE
+President of the Philippines`]]}
 ];
