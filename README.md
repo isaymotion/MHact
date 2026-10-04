@@ -6,7 +6,8 @@ An offline-first educational web app for Philippine psychiatry residents coverin
 - Full Act browser, linked section references, glossary and Act reference map.
 - Confidentiality, consent, Section 13 safeguards, rights and complaints, facility audit, capacity and documentation tools.
 - Quiz, RA 11036 and SDoMH flashcards, branching legal-practice cases, an 8-case Philippine SDoMH case library, 12 fictional Mental Health Act OSCE stations plus 7 integrated SDoMH OSCE stations with countdown timers, self-rating rubrics and viva prompts, community worksheet, social-risk screen and interventions library.
-- Global search across legal sections, glossary, flashcards, quizzes, cases, interventions, determinants, the SDoMH Case Library and OSCE stations.
+- SDoMH Intervention-Matching Tool with determinant-specific fictional scenarios, multilevel response options, formative feedback, scored practice and locally saved progress.
+- Global search across legal sections, glossary, flashcards, quizzes, cases, interventions, determinants, the SDoMH Case Library, intervention matching and OSCE stations.
 - Browser back/forward navigation, responsive keyboard-accessible mobile drawer, reduced-motion support and system-aware dark mode.
 - Progress export/import as a JSON backup. Progress is stored locally in this browser; export a backup before clearing browser data or changing devices.
 - Service-worker offline fallback with network-first updates for HTML, JavaScript and CSS.
@@ -15,6 +16,10 @@ An offline-first educational web app for Philippine psychiatry residents coverin
 The case library contains eight fictional teaching cases: urban housing insecurity; rural service access; OFW family separation; informal employment and medication affordability; disaster displacement; older adults living alone; adolescent bullying and school exclusion; and culturally responsive care with an Indigenous community. Each case includes risk and protective factors at five determinant levels, a model formulation, discussion questions, and a rights/systems lens. Release 2 adds two sequential branching decisions per case with choice-specific feedback, a structured intervention-plan builder across all five levels plus follow-up measures, and locally saved completion tracking. Progress is included in the app’s JSON export/import. Cases are educational composites, not reports about real people or communities.
 
 Roadmap: **Release 1** case library; **Release 2** interactive learning and intervention planning (included in this build); **Release 3** OSCE integration with timers, self-rating rubrics and viva prompts (included in this build); **Release 4** educator tools, printable case sheets, facilitator notes, OSCE handouts, and anonymized progress export (included in this build).
+
+
+## SDoMH intervention matching (Release 2)
+The intervention-matching tool includes six determinant scenarios: housing instability, unemployment/precarious work, food insecurity, social isolation, poor access to care, and stigma/discrimination. Each includes appropriate and inappropriate options across clinical, interpersonal, service, community and systems levels, rationale and role boundaries, formative feedback, and scored practice. Release 2 adds a multilevel plan builder: residents record patient priorities, identify the first priority, document feasibility constraints, prioritize selected interventions, assign leads/partners, specify timing, and define follow-up measures and contingency plans. Saved plans and scores are stored locally and included in JSON progress backup; educator CSV exports remain metadata-only and exclude free-text plans. Philippine examples include possible LGU/DSWD social welfare, PESO, RHU/primary-care, and community pathways; these are prompts to verify locally, not live referrals or guarantees of eligibility. The tool is an educational prototype, not a validated assessment instrument.
 
 ## OSCE integration (Release 3)
 The OSCE area retains the 12 core Mental Health Act stations and adds seven structured stations adapted from fictional SDoMH cases: housing insecurity, rural access, OFW family separation, medication affordability, disaster displacement, adolescent bullying, and culturally responsive Indigenous care. Each added station has a timed candidate task, suggested action checklist, model reasoning, RA 11036 and historical DOH plan context, a four-item self-rating rubric, and viva questions. Countdown is optional and does not auto-submit. Self-ratings are reflective learning aids, not validated national assessment instruments. Station attempts and rubric scores are stored locally and included in progress export/import.
@@ -33,6 +38,11 @@ Push the contents of this folder to the repository's publishing branch and confi
 ## Progress backup
 Use **Export progress** in the sidebar to save `mh-trainer-progress.json`. On another browser or after restoring data, choose **Import progress** and select that file. Import replaces the currently stored progress after confirmation. The backup contains only app progress saved in this browser; it is not a server account or cloud sync. Do not store identifiable patient information in notes.
 
+## SDoMH Intervention-Matching Tool (Release 4)
+Release 1 provides six determinant banks with 36 intervention options; Release 2 adds feedback, scoring and multilevel planning; Release 3 connects the tool to all eight fictional Philippine SDoMH cases and adds resource-sensitive branching; Release 4 adds educator-facing printable intervention facilitator guides, a five-domain case-planner rubric, and progress-export rows for determinant matching and saved case plans. The CSV contains completion/score metadata only and intentionally excludes free-text plan content. A course code is pseudonymous, not guaranteed anonymous. Exports remain local to the browser and should be handled under institutional data-governance rules.
+
+The intervention answer key is an educational aid. Multiple plans may be reasonable; appropriateness depends on clinical urgency, patient preferences, feasibility and verified local service availability. Rubrics and scores are not validated competency instruments.
+
 ## Sources and limitations
 - Republic Act No. 11036: https://lawphil.net/statutes/repacts/ra2018/ra_11036_2018.html
 - DOH *National Mental Health Strategic Plan 2019–2023*: https://doh.gov.ph/wp-content/uploads/2023/08/Mental-Health-Strategic-Plan.pdf
@@ -41,4 +51,15 @@ Use **Export progress** in the sidebar to save `mh-trainer-progress.json`. On an
 The 2019–2023 strategic plan is identified by its actual period and is not represented as the current plan. OSCE stations, scoring prompts, and model responses are educational material, not validated national assessment tools or quotations from statute. Check the full Act, current implementing rules and regulations, local protocols, and authoritative sources before clinical or legal use. Fictional cases only. Not legal or clinical advice.
 
 ---
-Created by Isabella Navarro, MD · Latest version October 2026 · isaymotion@gmail.com
+Created by Isabella Navarro, MD · Latest version October 2026 · SDoMH Intervention Matching Release 4 · isaymotion@gmail.com
+
+
+### Intervention matching — Release 2
+Release 2 adds a planning workflow after intervention matching. Learners can document patient priorities, choose the first priority, consider feasibility constraints, assign priority/timing/lead for selected appropriate interventions, and define follow-up measures and contingencies. Plans can be printed as a standalone planning sheet. The plan remains in local browser storage and is included in the JSON progress backup; free-text plan details are intentionally excluded from the educator CSV summary.
+
+
+## Release 3 — Case-based SDoMH intervention planner
+
+Release 3 adds a case-based planner connected to all eight fictional Philippine SDoMH cases. Residents can select interacting determinants, choose candidate responses from the intervention library, draft clinical and social actions, prioritize work, assign leads and timing, respond to resource/access constraints through branching guidance, record patient preferences and protective factors, define follow-up and contingencies, and complete a five-domain self-reflection rubric. Plans save locally in the browser and can be printed. No patient-identifying information should be entered. The self-rating is formative and not a validated competency measure.
+
+The new navigation item is **Case-Based SDoMH Planner**. Service examples are illustrative; local availability, eligibility and protocols must be verified. Service worker cache version: `mh-trainer-v16`.
