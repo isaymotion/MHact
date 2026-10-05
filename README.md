@@ -109,3 +109,12 @@ Verified in headless Chromium (Playwright) over HTTP:
 - **Act reference map:** the section column (e.g. 14-22) is now linked.
 - **Back/forward:** one history stack. The in-app Back button now calls `history.back()`, so it no longer goes forward after the browser's Back button is used.
 Known open items: see the review notes (answer-position bias in pathways, learning decisions and matching; first-install auto-reload; sub-views are not history entries).
+
+## Phase 1: scoring redesign (cache `mh-trainer-v27`)
+- **Shuffled options everywhere.** Quiz, Pathways, SDoMH decisions and Matching show options in a random order. Order is stable within an attempt (a seed is saved) and changes on retry. Saved answers use the original data index or option id, so existing progress is unaffected.
+- **Rationale before feedback.** A short written reason (at least 5 words) is required before feedback. Turn it off on the Home page under Practice settings. Rationales are saved with the attempt and shown in feedback and review. They are self-reflection prompts, not auto-graded.
+- **More plausible distractors.** Quiz single-choice items gained a fifth option, Pathways now have four options per decision, SDoMH decisions have four or five, and Matching has eight or nine options.
+- **Varied number of correct answers.** Eight select-all quiz questions (2 to 5 correct), SDoMH decisions with one or two strong answers, Matching with four or five appropriate options.
+- **Partly appropriate tier.** SDoMH decisions now include plausible but incomplete responses scoring 1 of 2.
+- **No giveaway labels.** Matching hides each option's level and lead agency until after submission.
+- New content lives in `scoring-content.js`. Distractor wording and feedback are educational drafts that need faculty review.
