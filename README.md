@@ -136,3 +136,8 @@ Known open items: see the review notes (answer-position bias in pathways, learni
 - **Faculty tools tab.** (1) Author OSCE stations and share them as station packs (JSON); faculty stations appear in the OSCE tab, in circuits and in print sheets. (2) Cohort dashboard from learners' anonymized CSV exports. (3) Learner review from a progress backup, showing choices and written rationales next to the preferred answers (use only with the learner's consent). (4) Printable circuit score sheets.
 - Faculty stations, circuits and IRR tracker entries stay on the device. Imported station packs are sanitized and length-limited, but their content is the author's responsibility.
 - Educational, formative aids only; not validated assessment instruments and not legal advice.
+
+## App icon (cache `mh-trainer-v30`)
+- New icon: the Philippine sun with a nipa hut and brain (`assets/icon-source.png`, 1254 x 1254).
+- Generated files: `apple-touch-icon.png` (180, iOS home screen), `icon-192.png`, `icon-512.png`, `icon-512-maskable.png` (artwork inside the safe zone for Android adaptive icons), `favicon-32.png`.
+- iPhone: iOS caches the home-screen icon. To see the new one, delete the existing home-screen shortcut, then open the app in Safari and use Share > Add to Home Screen.
