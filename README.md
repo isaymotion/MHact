@@ -118,3 +118,21 @@ Known open items: see the review notes (answer-position bias in pathways, learni
 - **Partly appropriate tier.** SDoMH decisions now include plausible but incomplete responses scoring 1 of 2.
 - **No giveaway labels.** Matching hides each option's level and lead agency until after submission.
 - New content lives in `scoring-content.js`. Distractor wording and feedback are educational drafts that need faculty review.
+
+## Phase 2: Philippine data (cache `mh-trainer-v28`)
+- **New "Philippine data" tab** (Learn group): 44 figures in 10 groups (burden, treatment coverage, suicide, youth, workforce, facilities, financing and system, social context, crisis line, and "Why numbers differ"). Each figure shows its value, basis (year or method), where it appears in the source, a full citation with link, a reliability label, and the related provisions of the Act. "Copy citation" copies one figure with its reference.
+- **Evidence brief builder**: tick figures and copy a short cited paragraph with numbered references, for community assessments and proposals.
+- **Determinants tab** links to related Philippine figures (for example access to care to treatment coverage and workforce).
+- **Search** indexes the figures; the Quiz has a "Philippine data" topic (six questions including one select-all).
+- **Verification**: every figure was re-read in its cited source on 6 October 2026. `PH_DATA_VERIFICATION.md` lists each figure, its source and its location, plus the corrections made during verification. Update the log whenever `phdata.js` changes.
+- **Editing rule** for `phdata.js`: add a figure only with a source key, a basis, and a location in the source. Prefer primary sources and mark secondary ones.
+- **Known limits**: most figures date from 2019-2022; coverage counts are mainly public sector and are rough; the PSA registered counts are preliminary and later releases will differ; crisis-line numbers change, so verify them on the DOH website.
+
+## Phase 3: IRR layer, mock OSCE circuit and faculty tools (cache `mh-trainer-v29`)
+- **IRR tab.** The Implementing Rules and Regulations (approved by the DOH on 22 January 2019) are numbered differently from the Act (for example Act Sec. 13 is IRR Sec. 9, Act Sec. 12 is IRR Sec. 14, Act Sec. 44 is IRR Sec. 45). The tab has a converter, a 50-row crosswalk, "what the IRR adds" with exact excerpts, and a tracker for the guidelines the IRR directed DOH and others to issue. The tracker records what *you* find; the app does not verify which guidelines exist.
+- **Link routing.** Write "IRR Sec. N" for the IRR and "Sec. N" (or "Act Sec. N") for the Act. "IRR Sec. N" links to the IRR tab; everything else links to the Act. Every section in the Act tab now shows its IRR counterpart.
+- **Source and verification.** IRR text read on 7 October 2026 from a full-text transcription (Legaldex); the PDF is hosted in the WHO MiNDbank (link in the tab). Confirm wording against the PDF before formal use. Quoted excerpts are exact; summaries and "In practice" notes are interpretation.
+- **Mock OSCE circuit** (OSCE tab). Presets (Junior, Senior, mixed, legal essentials, faculty, or your own selection), reading time, station time, rest, pause, optional beeps, a combined debrief with self-rating per criterion, and saved history. Circuit scores appear in the anonymous CSV; notes never do.
+- **Faculty tools tab.** (1) Author OSCE stations and share them as station packs (JSON); faculty stations appear in the OSCE tab, in circuits and in print sheets. (2) Cohort dashboard from learners' anonymized CSV exports. (3) Learner review from a progress backup, showing choices and written rationales next to the preferred answers (use only with the learner's consent). (4) Printable circuit score sheets.
+- Faculty stations, circuits and IRR tracker entries stay on the device. Imported station packs are sanitized and length-limited, but their content is the author's responsibility.
+- Educational, formative aids only; not validated assessment instruments and not legal advice.
