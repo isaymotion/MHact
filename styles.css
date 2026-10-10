@@ -63,3 +63,6 @@ main{width:min(100%,1120px);margin:0 auto;padding:clamp(24px,4vw,48px) clamp(20p
 
 .irr-note{margin-top:4px}.irr-link{font-weight:600}
 #fc-out table,#irr-table{font-size:13px}.rubric-list{display:grid;gap:6px}
+
+.app-back[disabled]{opacity:.4;cursor:default}.app-forward{margin-left:6px}
+@media(max-width:480px){.app-nav-label{display:none}.app-back{min-width:44px}}
